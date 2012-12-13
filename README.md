@@ -1,21 +1,13 @@
 PublicCodeLibrary
 =================
 
-An Xcode 4 project to build a Real Static Universal Framework (armv6, armv7, simulator) of my iOS library. The library contains some useful methods simplifying daily programming.
-
-Quick Facts
------------
-
-- this is a freely usable and distributable library for iOS development
-- it targets to simplify daily development tasks by providing useful and well documented code (e.g. categories, wrapper classes, ...)
+An Xcode 4 project to build a Real Static Universal Framework (armv7, armv7s, simulator) of my iOS library. The library simplifies daily development by providing useful and well documented code (e.g categories, wrapper classes, ...)
 
 Next Steps
 ----------
 
-- give Xcode project its new name (the repo name)
-- select a license for this lib
 - enhance documentation
-- building a iOS framework instead of a library
+- give category methods "pcl_" prefix to easily find them with code completion in main project
 
 License
 -------

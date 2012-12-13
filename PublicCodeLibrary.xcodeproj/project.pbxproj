@@ -37,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9387AF916796A9C000CB216 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		B962F40016795C810004221B /* PublicCodeLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = PublicCodeLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B962F40316795C810004221B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PublicCodeLibrary-Info.plist"; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		B962F40516795C810004221B /* PublicCodeLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B9387AF916796A9C000CB216 /* README.md */,
 				B962F42316795D140004221B /* PublicCodeLibrary.h */,
 				B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */,
 				B962F42116795D140004221B /* PCLStrings.h */,
