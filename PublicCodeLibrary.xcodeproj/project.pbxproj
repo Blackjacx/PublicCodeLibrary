@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B962F40416795C810004221B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F40316795C810004221B /* Foundation.framework */; };
+		B962F40A16795C810004221B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B962F40816795C810004221B /* InfoPlist.strings */; };
+		B962F41216795CBC0004221B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41116795CBC0004221B /* UIKit.framework */; };
+		B962F41416795CC20004221B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41316795CC20004221B /* QuartzCore.framework */; };
+		B962F41616795CC90004221B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41516795CC90004221B /* CoreGraphics.framework */; };
+		B962F42E16795D140004221B /* NSArray+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41716795D140004221B /* NSArray+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F42F16795D140004221B /* NSArray+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41816795D140004221B /* NSArray+PCLExtensions.m */; };
+		B962F43016795D140004221B /* NSError+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41916795D140004221B /* NSError+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43116795D140004221B /* NSError+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41A16795D140004221B /* NSError+PCLExtensions.m */; };
+		B962F43216795D140004221B /* NSString+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41B16795D140004221B /* NSString+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43316795D140004221B /* NSString+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41C16795D140004221B /* NSString+PCLExtensions.m */; };
+		B962F43416795D140004221B /* NSURL+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41D16795D140004221B /* NSURL+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43516795D140004221B /* NSURL+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41E16795D140004221B /* NSURL+PCLExtensions.m */; };
+		B962F43616795D140004221B /* PCLRestCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41F16795D140004221B /* PCLRestCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43716795D140004221B /* PCLRestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42016795D140004221B /* PCLRestCommand.m */; };
+		B962F43816795D140004221B /* PCLStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42116795D140004221B /* PCLStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43A16795D140004221B /* PublicCodeLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42316795D140004221B /* PublicCodeLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43B16795D140004221B /* UIApplication+PCLExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42416795D140004221B /* UIApplication+PCLExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43C16795D140004221B /* UIApplication+PCLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42516795D140004221B /* UIApplication+PCLExtension.m */; };
+		B962F43D16795D140004221B /* UIColor+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42616795D140004221B /* UIColor+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F43E16795D140004221B /* UIColor+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42716795D140004221B /* UIColor+PCLExtensions.m */; };
+		B962F43F16795D140004221B /* UIDevice+PCLExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42816795D140004221B /* UIDevice+PCLExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F44016795D140004221B /* UIDevice+PCLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42916795D140004221B /* UIDevice+PCLExtension.m */; };
+		B962F44116795D140004221B /* UIImage+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42A16795D140004221B /* UIImage+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F44216795D140004221B /* UIImage+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42B16795D140004221B /* UIImage+PCLExtensions.m */; };
+		B962F44316795D140004221B /* UIView+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42C16795D140004221B /* UIView+PCLExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B962F44416795D140004221B /* UIView+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42D16795D140004221B /* UIView+PCLExtensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B962F40016795C810004221B /* PublicCodeLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = PublicCodeLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B962F40316795C810004221B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PublicCodeLibrary-Info.plist"; sourceTree = "<group>"; };
+		B962F40916795C810004221B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicCodeLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		B962F41116795CBC0004221B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B962F41316795CC20004221B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B962F41516795CC90004221B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B962F41716795D140004221B /* NSArray+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F41816795D140004221B /* NSArray+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F41916795D140004221B /* NSError+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F41A16795D140004221B /* NSError+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F41B16795D140004221B /* NSString+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F41C16795D140004221B /* NSString+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F41D16795D140004221B /* NSURL+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F41E16795D140004221B /* NSURL+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F41F16795D140004221B /* PCLRestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLRestCommand.h; sourceTree = "<group>"; };
+		B962F42016795D140004221B /* PCLRestCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLRestCommand.m; sourceTree = "<group>"; };
+		B962F42116795D140004221B /* PCLStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLStrings.h; sourceTree = "<group>"; };
+		B962F42316795D140004221B /* PublicCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
+		B962F42416795D140004221B /* UIApplication+PCLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PCLExtension.h"; sourceTree = "<group>"; };
+		B962F42516795D140004221B /* UIApplication+PCLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PCLExtension.m"; sourceTree = "<group>"; };
+		B962F42616795D140004221B /* UIColor+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F42716795D140004221B /* UIColor+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F42816795D140004221B /* UIDevice+PCLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PCLExtension.h"; sourceTree = "<group>"; };
+		B962F42916795D140004221B /* UIDevice+PCLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PCLExtension.m"; sourceTree = "<group>"; };
+		B962F42A16795D140004221B /* UIImage+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F42B16795D140004221B /* UIImage+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PCLExtensions.m"; sourceTree = "<group>"; };
+		B962F42C16795D140004221B /* UIView+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PCLExtensions.h"; sourceTree = "<group>"; };
+		B962F42D16795D140004221B /* UIView+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PCLExtensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B962F3FA16795C810004221B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962F41616795CC90004221B /* CoreGraphics.framework in Frameworks */,
+				B962F41416795CC20004221B /* QuartzCore.framework in Frameworks */,
+				B962F41216795CBC0004221B /* UIKit.framework in Frameworks */,
+				B962F40416795C810004221B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B962F3F116795C800004221B = {
+			isa = PBXGroup;
+			children = (
+				B962F40516795C810004221B /* PublicCodeLibrary */,
+				B962F40216795C810004221B /* Frameworks */,
+				B962F40116795C810004221B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B962F40116795C810004221B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B962F40016795C810004221B /* PublicCodeLibrary.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B962F40216795C810004221B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B962F41516795CC90004221B /* CoreGraphics.framework */,
+				B962F41316795CC20004221B /* QuartzCore.framework */,
+				B962F41116795CBC0004221B /* UIKit.framework */,
+				B962F40316795C810004221B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B962F40516795C810004221B /* PublicCodeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B962F42316795D140004221B /* PublicCodeLibrary.h */,
+				B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */,
+				B962F42116795D140004221B /* PCLStrings.h */,
+				B962F44916795E980004221B /* Foundation */,
+				B962F44816795E840004221B /* Backend */,
+				B962F44A16795EC60004221B /* UI */,
+				B962F40616795C810004221B /* Supporting Files */,
+			);
+			path = PublicCodeLibrary;
+			sourceTree = "<group>";
+		};
+		B962F40616795C810004221B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */,
+				B962F40816795C810004221B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B962F44816795E840004221B /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				B962F41F16795D140004221B /* PCLRestCommand.h */,
+				B962F42016795D140004221B /* PCLRestCommand.m */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		B962F44916795E980004221B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B962F41716795D140004221B /* NSArray+PCLExtensions.h */,
+				B962F41816795D140004221B /* NSArray+PCLExtensions.m */,
+				B962F41916795D140004221B /* NSError+PCLExtensions.h */,
+				B962F41A16795D140004221B /* NSError+PCLExtensions.m */,
+				B962F41B16795D140004221B /* NSString+PCLExtensions.h */,
+				B962F41C16795D140004221B /* NSString+PCLExtensions.m */,
+				B962F41D16795D140004221B /* NSURL+PCLExtensions.h */,
+				B962F41E16795D140004221B /* NSURL+PCLExtensions.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		B962F44A16795EC60004221B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B962F42416795D140004221B /* UIApplication+PCLExtension.h */,
+				B962F42516795D140004221B /* UIApplication+PCLExtension.m */,
+				B962F42616795D140004221B /* UIColor+PCLExtensions.h */,
+				B962F42716795D140004221B /* UIColor+PCLExtensions.m */,
+				B962F42816795D140004221B /* UIDevice+PCLExtension.h */,
+				B962F42916795D140004221B /* UIDevice+PCLExtension.m */,
+				B962F42A16795D140004221B /* UIImage+PCLExtensions.h */,
+				B962F42B16795D140004221B /* UIImage+PCLExtensions.m */,
+				B962F42C16795D140004221B /* UIView+PCLExtensions.h */,
+				B962F42D16795D140004221B /* UIView+PCLExtensions.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B962F3FB16795C810004221B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962F42E16795D140004221B /* NSArray+PCLExtensions.h in Headers */,
+				B962F43016795D140004221B /* NSError+PCLExtensions.h in Headers */,
+				B962F43216795D140004221B /* NSString+PCLExtensions.h in Headers */,
+				B962F43416795D140004221B /* NSURL+PCLExtensions.h in Headers */,
+				B962F43616795D140004221B /* PCLRestCommand.h in Headers */,
+				B962F43816795D140004221B /* PCLStrings.h in Headers */,
+				B962F43A16795D140004221B /* PublicCodeLibrary.h in Headers */,
+				B962F43B16795D140004221B /* UIApplication+PCLExtension.h in Headers */,
+				B962F43D16795D140004221B /* UIColor+PCLExtensions.h in Headers */,
+				B962F43F16795D140004221B /* UIDevice+PCLExtension.h in Headers */,
+				B962F44116795D140004221B /* UIImage+PCLExtensions.h in Headers */,
+				B962F44316795D140004221B /* UIView+PCLExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B962F3FF16795C810004221B /* PublicCodeLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B962F40E16795C810004221B /* Build configuration list for PBXNativeTarget "PublicCodeLibrary" */;
+			buildPhases = (
+				B962F3F816795C810004221B /* ShellScript */,
+				B962F3F916795C810004221B /* Sources */,
+				B962F3FA16795C810004221B /* Frameworks */,
+				B962F3FB16795C810004221B /* Headers */,
+				B962F3FC16795C810004221B /* Resources */,
+				B962F3FD16795C810004221B /* ShellScript */,
+				B962F3FE16795C810004221B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PublicCodeLibrary;
+			productName = PublicCodeLibrary;
+			productReference = B962F40016795C810004221B /* PublicCodeLibrary.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B962F3F316795C800004221B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Blackjacx;
+			};
+			buildConfigurationList = B962F3F616795C800004221B /* Build configuration list for PBXProject "PublicCodeLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B962F3F116795C800004221B;
+			productRefGroup = B962F40116795C810004221B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B962F3FF16795C810004221B /* PublicCodeLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B962F3FC16795C810004221B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962F40A16795C810004221B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B962F3F816795C810004221B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		B962F3FD16795C810004221B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		B962F3FE16795C810004221B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B962F3F916795C810004221B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962F42F16795D140004221B /* NSArray+PCLExtensions.m in Sources */,
+				B962F43116795D140004221B /* NSError+PCLExtensions.m in Sources */,
+				B962F43316795D140004221B /* NSString+PCLExtensions.m in Sources */,
+				B962F43516795D140004221B /* NSURL+PCLExtensions.m in Sources */,
+				B962F43716795D140004221B /* PCLRestCommand.m in Sources */,
+				B962F43C16795D140004221B /* UIApplication+PCLExtension.m in Sources */,
+				B962F43E16795D140004221B /* UIColor+PCLExtensions.m in Sources */,
+				B962F44016795D140004221B /* UIDevice+PCLExtension.m in Sources */,
+				B962F44216795D140004221B /* UIImage+PCLExtensions.m in Sources */,
+				B962F44416795D140004221B /* UIView+PCLExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B962F40816795C810004221B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B962F40916795C810004221B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B962F40C16795C810004221B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B962F40D16795C810004221B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B962F40F16795C810004221B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PublicCodeLibrary/PublicCodeLibrary-Prefix.pch";
+				INFOPLIST_FILE = "PublicCodeLibrary/PublicCodeLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		B962F41016795C810004221B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PublicCodeLibrary/PublicCodeLibrary-Prefix.pch";
+				INFOPLIST_FILE = "PublicCodeLibrary/PublicCodeLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B962F3F616795C800004221B /* Build configuration list for PBXProject "PublicCodeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B962F40C16795C810004221B /* Debug */,
+				B962F40D16795C810004221B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B962F40E16795C810004221B /* Build configuration list for PBXNativeTarget "PublicCodeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B962F40F16795C810004221B /* Debug */,
+				B962F41016795C810004221B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B962F3F316795C800004221B /* Project object */;
+}
