@@ -85,6 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9387AFB16796C92000CB216 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B962F42316795D140004221B /* PublicCodeLibrary.h */,
+				B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */,
+				B962F42116795D140004221B /* PCLStrings.h */,
+				B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */,
+				B962F40816795C810004221B /* InfoPlist.strings */,
+				B9387AF916796A9C000CB216 /* README.md */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		B962F3F116795C800004221B = {
 			isa = PBXGroup;
 			children = (
@@ -116,25 +129,12 @@
 		B962F40516795C810004221B /* PublicCodeLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				B9387AF916796A9C000CB216 /* README.md */,
-				B962F42316795D140004221B /* PublicCodeLibrary.h */,
-				B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */,
-				B962F42116795D140004221B /* PCLStrings.h */,
+				B9387AFB16796C92000CB216 /* Core */,
 				B962F44916795E980004221B /* Foundation */,
 				B962F44816795E840004221B /* Backend */,
 				B962F44A16795EC60004221B /* UI */,
-				B962F40616795C810004221B /* Supporting Files */,
 			);
 			path = PublicCodeLibrary;
-			sourceTree = "<group>";
-		};
-		B962F40616795C810004221B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */,
-				B962F40816795C810004221B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B962F44816795E840004221B /* Backend */ = {
