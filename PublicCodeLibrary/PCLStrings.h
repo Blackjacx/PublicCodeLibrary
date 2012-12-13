@@ -16,7 +16,6 @@
 */
 
 #define PCL_DECLARE_STRING( name ) extern NSString * const name;
-#define PCL_DEFINE_STRING_WITH_AUTO_VALUE( name ) NSString * const name = @#name;
 #define PCL_DEFINE_STRING( name, value ) NSString * const name = value;
 
 //!@}
@@ -34,6 +33,5 @@
 
 #define PCL_DECLARE_KEY( key ) extern NSString * const key;
 #define PCL_DEFINE_KEY( key ) NSString * const key = @#key;
-#define PCL_DEFINE_KEY_WITH_VALUE( key, value ) NSString * const key = value;
 
 //!@}
