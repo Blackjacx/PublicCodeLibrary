@@ -1,24 +1,21 @@
-//
-//  NSURL+PCLExtensions.m
-//  PrivateCodeLibrary
-//
-//  Created by *** *** on 9/20/11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
-//
+/*!
+ @file		NSURL+PCLExtensions.m
+ @brief		Extensions for the class NSURL
+ @author	Stefan Herold
+ @date		2012-12-16
+ @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ */
 
-#import "NSURL+PCLExtensions.h"
-
-// Library Imports
-#import "NSString+PCLExtensions.h"
+#import <PublicCodeLibrary/NSURL+PCLExtensions.h>
+#import <PublicCodeLibrary/NSString+PCLExtensions.h>
 
 @implementation NSURL (PCLExtensions)
 
-// MARK: 
 // MARK URL Creation
 
-+ (NSURL *)URLWithRoot:(NSString *)root
-		path:(NSString *)path 
-		getParameters:(NSDictionary *)getParameters
++ (NSURL *)pcl_URLWithRoot:(NSString *)root
+					  path:(NSString *)path
+			 getParameters:(NSDictionary *)getParameters
 {	
 	NSMutableString * URLAsString = [NSMutableString stringWithString:root];
 	
@@ -33,7 +30,7 @@
 	for ( NSString * key in parameterKeys )
 	{
 		NSString * const parameter = getParameters[key];
-		NSString * const escapedParameter = [parameter URLEncodedString];
+		NSString * const escapedParameter = [parameter pcl_URLEncodedString];
 		
 		if ( isFirstParameter ) {
 			isFirstParameter = NO;

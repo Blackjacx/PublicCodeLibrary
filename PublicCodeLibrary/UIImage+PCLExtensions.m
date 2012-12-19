@@ -1,16 +1,16 @@
 //
 //  UIImage+PCLExtensions.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
-//  Created by *** *** on 9/12/11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Created by Stefan Herold on 9/12/11.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "UIImage+PCLExtensions.h"
+#import <PublicCodeLibrary/UIImage+PCLExtensions.h>
 
 @implementation UIImage (PCLExtensions)
 
-- (UIImage*)randomImageOfSize:(CGSize)aSize
+- (UIImage*)pcl_randomImageOfSize:(CGSize)aSize
 {
 	CGFloat nX = arc4random() % (NSUInteger)(self.size.width - aSize.width);
 	CGFloat nY = arc4random() % (NSUInteger)(self.size.height - aSize.height);

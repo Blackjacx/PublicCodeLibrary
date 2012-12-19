@@ -1,24 +1,26 @@
 //
 //  UIApplication+PCLExtension.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
 //  Created by Stefan Herold on 6/24/12.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "UIApplication+PCLExtension.h"
+#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
+#import <PublicCodeLibrary/NSString+PCLExtensions.h>
 
-@implementation UIApplication (PCLExtension)
+@implementation UIApplication (PCLExtensions)
 
-+ (NSString*)appVersion {
-	NSCharacterSet * trimmingSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
++ (NSString*)pcl_appVersion {
+	
 	id bundleVerObj = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
 	NSString * bundleVer = [NSString stringWithFormat:@"%@", bundleVerObj];
-	NSString * bundleVerTrimmed = [bundleVer stringByTrimmingCharactersInSet:trimmingSet];
+	NSString * bundleVerTrimmed = [bundleVer pcl_trim];
 	return bundleVerTrimmed;
 }
 
-+ (NSString*)applicationName {
++ (NSString*)pcl_applicationName {
+	
 	id appNameObj = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
 	NSString * appName = [NSString stringWithFormat:@"%@", appNameObj];
 	return appName;

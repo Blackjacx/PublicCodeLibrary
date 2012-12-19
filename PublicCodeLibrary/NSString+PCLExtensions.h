@@ -1,76 +1,144 @@
 /*!
- @brief		NSString category based extensions
- @author	*** ***
+ @file		NSSTring+PCLExtensions.h
+ @brief		Extensions for the class NSString
+ @author	Stefan Herold
  @date		2011-10-24
- @copyright	Copyright (c) 2012 Blackjacx & Co. All rights reserved.
+ @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import <PublicCodeLibrary/PCLTypeDefs.h>
 
+/*!
+ @typedef NSStringLoremIpsumType
+ @brief Input types to generate a lorem ipsum text
+ */
 typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 	NSStringLoremIpsumTypeLength,
 	NSStringLoremIpsumTypeMaxLength,
 	NSStringLoremIpsumTypeWords,
 	NSStringLoremIpsumTypeMaxWords
-	
 };
 
 @interface NSString (PCLExtensions)
 
-// MARK: 
+
 // MARK: Lorem Ipsum Generation
+/*!
+ @name Lorem Ipsum Generation
+ @{
+ */
++ (NSString*)pcl_loremIpsumWithValue:(NSUInteger)aValue type:(NSStringLoremIpsumType)aType;
++ (NSString*)pcl_loremIpsumWithLength:(NSUInteger)aLength;
++ (NSString*)pcl_loremIpsumWithMaxLength:(NSUInteger)aLength;
++ (NSString*)pcl_loremIpsumWithWords:(NSUInteger)aCount;
++ (NSString*)pcl_loremIpsumWithMaxWords:(NSUInteger)aCount;
+//!@}
 
-+ (NSString*) loremIpsumWithValue:(NSUInteger)aValue type:(NSStringLoremIpsumType)aType;
-+ (NSString*) loremIpsumWithLength:(NSUInteger)aLength;
-+ (NSString*) loremIpsumWithMaxLength:(NSUInteger)aLength;
-+ (NSString*) loremIpsumWithWords:(NSUInteger)aCount;
-+ (NSString*) loremIpsumWithMaxWords:(NSUInteger)aCount;
 
-// MARK: 
 // MARK: Repeating Strings
+/*!
+ @name Repeating Strings
+ @{
+ */
+- (NSString*)pcl_repeat:(NSUInteger)times;
+//!@}
 
-- (NSString*)repeat:(NSUInteger)times;
 
-// MARK: 
 // MARK: URL Encoding
+/*!
+ @name URL Encoding
+ @{
+ */
+- (NSString *)pcl_URLEncodedString;
+- (NSString *)pcl_URLDecodedString;
+//!@}
 
-- (NSString *)URLEncodedString;
-- (NSString *)URLDecodedString;
 
-// MARK: 
-// MARK: UUID Generation
+// MARK: UDID Generation
+/*!
+ @name UDID Generation
+ @{
+ */
++ (NSString*)pcl_uniqueID;
+//!@}
 
-+ (NSString*)uniqueID;
 
-// MARK: 
 // MARK: Comparison
+/*!
+ @name Comparison
+ @{
+ */
+- (BOOL)pcl_isNotEqualToString:(NSString*)aString;
+- (BOOL)pcl_isLowerToString:(NSString*)aString;
+- (BOOL)pcl_isLowerEqualToString:(NSString*)aString;
+//!@}
 
-- (BOOL)isNotEqualToString:(NSString*)aString;
-- (BOOL)isLowerToString:(NSString*)aString;
-- (BOOL)isLowerEqualToString:(NSString*)aString;
 
-// MARK: 
 // MARK: Truncation
+/*!
+ @name Truncation
+ @{
+ */
+- (NSString*)pcl_trim;
+- (NSString*)pcl_truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont;
+//!@}
 
-- (NSString*)trim;
-- (NSString*)truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont;
 
-// MARK: 
-// MARK: Strings Length Related
+// MARK: Length Related
+/*!
+ @name Length Related
+ @{
+ */
+- (BOOL)pcl_isEmpty;
+- (BOOL)pcl_isNotEmpty;
+//!@}
 
-- (BOOL)empty;
 
-// MARK: 
 // MARK: File Paths
+/*!
+ @name File Paths
+ @{
+ */
+- (NSString*)pcl_concatWithDocumentsDirectoryPath;
+- (NSString*)pcl_concatWithTemporaryDirectoryPath;
+//!@}
 
-- (NSString*)concatWithDocumentsDirectoryPath;
-- (NSString*)concatWithTemporaryDirectoryPath;
 
-// MARK: 
-// MARK: Regular Expression Checking
+// MARK: Regular Expression Checking / Validation
+/*!
+ @name Regular Expression Checking / Validation
+ @{
+ */
+- (BOOL)pcl_matchesRegularExpression:(NSString*)regexPattern;
+- (BOOL)pcl_isValidEmail;
+//!@}
 
-- (BOOL)matchesRegularExpression:(NSString*)regexPattern;
 
+// MARK: Hash Generation
+/*!
+ @name Hash Generation
+ @{
+ */
+- (NSString *)pcl_sha512HashFromUTF8String;
+//!@}
+
+
+// MARK: Formatting
+/*!
+ @name Formatting
+ @{
+ */
++ (NSString *)pcl_stringByConvertingBytesToHumanReadableFormat:(PCLFileSize)bytes;
++ (NSString*)pcl_stringFromTimeInSeconds:(NSTimeInterval)timeInSeconds includeHoursInMinutesIfUnderAnHour:(BOOL)includeHoursInMinutes;
+//!@}
+
+
+// MARK: User Agent Generation
+/*!
+ @name User Agent Generation
+ @{
+ */
++ (NSString*)pcl_userAgentString;
+//!@}
 
 @end

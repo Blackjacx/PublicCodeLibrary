@@ -1,12 +1,10 @@
 //
 //  NSError+PCLExtensions.h
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
-//  Created by *** *** on 10/24/11.
-//  Copyright (c) 2011 Blackjacx & Co. All rights reserved.
+//  Created by Stefan Herold on 10/24/11.
+//  Copyright (c) 2011 Stefan Herold. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, PCLErrorCode) {
 	/*! 
@@ -26,6 +24,6 @@ typedef NS_ENUM(NSUInteger, PCLErrorCode) {
 				@c NSLocalizedFailureReasonErrorKey
 				@c NSLocalizedDescriptionKey }
 */
-+ (NSError *)errorWithDomain:(NSString *)domain code:(NSInteger)code;
++ (NSError *)pcl_errorWithDomain:(NSString *)domain code:(NSInteger)code;
 
 @end

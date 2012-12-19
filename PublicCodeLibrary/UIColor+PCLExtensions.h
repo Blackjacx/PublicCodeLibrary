@@ -1,25 +1,22 @@
 //
 //  UIColor+PCLExtensions.h
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
-
 
 @interface UIColor (PCLExtensions)
 
-- (CGFloat)red;
-- (CGFloat)green;
-- (CGFloat)blue;
-- (CGFloat)alpha;
+- (CGFloat)pcl_red;
+- (CGFloat)pcl_green;
+- (CGFloat)pcl_blue;
+- (CGFloat)pcl_alpha;
 
-+ (UIColor*)colorWithRed:(NSUInteger)redValue 
-                  green:(NSUInteger)greenValue
-                   blue:(NSUInteger)blueValue;
++ (UIColor*)pcl_colorWithRed:(NSUInteger)redValue
+					   green:(NSUInteger)greenValue
+						blue:(NSUInteger)blueValue;
 
-+ (UIColor*)randomColor;
++ (UIColor*)pcl_randomColor;
 
 @end

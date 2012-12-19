@@ -1,13 +1,13 @@
 //
 //  NSError+PCLExtensions.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
-//  Created by *** *** on 10/24/11.
-//  Copyright (c) 2011 Blackjacx & Co. All rights reserved.
+//  Created by Stefan Herold on 10/24/11.
+//  Copyright (c) 2011 Stefan Herold. All rights reserved.
 //
 
-#import "NSError+PCLExtensions.h"
-#import "PCLStrings.h"
+#import <PublicCodeLibrary/NSError+PCLExtensions.h>
+#import <PublicCodeLibrary/PCLStrings.h>
 
 PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForFailureReason,		@"FR_");
 PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForErrorDescription,	@"ED_");
@@ -120,7 +120,7 @@ PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForRecoveryS
 	return [self initWithDomain:domain code:code userInfo:newUserInfo];
 }
 
-+ (NSError *)errorWithDomain:(NSString *)domain code:(NSInteger)code {
++ (NSError *)pcl_errorWithDomain:(NSString *)domain code:(NSInteger)code {
 	NSError * error = [[self alloc] initWithDomain:domain code:code];
 	return error;
 }

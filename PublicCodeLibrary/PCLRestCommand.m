@@ -2,18 +2,16 @@
 //  PCLRestCommand.m
 //  OperationExample
 //
-//  Created by *** *** on 9/12/11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Created by Stefan Herold on 9/12/11.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "PCLRestCommand.h"
-
-// Library Imports
-#import "PCLStrings.h"
-#import "NSString+PCLExtensions.h"
-#import "NSURL+PCLExtensions.h"
-#import "UIApplication+PCLExtension.h"
-#import "UIDevice+PCLExtension.h"
+#import <PublicCodeLibrary/PCLRestCommand.h>
+#import <PublicCodeLibrary/PCLStrings.h>
+#import <PublicCodeLibrary/NSString+PCLExtensions.h>
+#import <PublicCodeLibrary/NSURL+PCLExtensions.h>
+#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
+#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
 
 static CGFloat const PCLRestOperationDefaultTimeout = 30.0;
 
@@ -81,7 +79,7 @@ static NSOperationQueue * backgroundQueue;
 }
 
 - (void)dealloc {
-	
+
 	[self removeObserver:self
 			  forKeyPath:PCLRestCommandOperationIsFinishedKeyPath];
 }
@@ -91,9 +89,9 @@ static NSOperationQueue * backgroundQueue;
 
 - (NSURLRequest*)URLRequest {
 	
-	NSURL * URL = [NSURL URLWithRoot:_rootURL
-								path:_urlPath
-					   getParameters:_getParameters];
+	NSURL * URL = [NSURL pcl_URLWithRoot:_rootURL
+									path:_urlPath
+						   getParameters:_getParameters];
 	NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:URL];
 	
 	[request setCachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData];
@@ -119,10 +117,10 @@ static NSOperationQueue * backgroundQueue;
 	if( !_userAgent ) {
 		
 		_userAgent = [NSString stringWithFormat:@"%@/%@ %@/%@ %@",
-					  [[UIApplication applicationName]
+					  [[UIApplication pcl_applicationName]
 					   stringByReplacingOccurrencesOfString:@" "
 					   withString:@"_"],
-					  [[UIApplication appVersion]
+					  [[UIApplication pcl_appVersion]
 					   stringByReplacingOccurrencesOfString:@" "
 					   withString:@"_"],
 					  [[[UIDevice currentDevice] systemName]
@@ -131,7 +129,7 @@ static NSOperationQueue * backgroundQueue;
 					  [[[UIDevice currentDevice] systemVersion]
 					   stringByReplacingOccurrencesOfString:@" "
 					   withString:@"_"],
-					  [[[UIDevice currentDevice] machine]
+					  [[[UIDevice currentDevice] pcl_machine]
 					   stringByReplacingOccurrencesOfString:@" "
 					   withString:@"_"]];
 	}

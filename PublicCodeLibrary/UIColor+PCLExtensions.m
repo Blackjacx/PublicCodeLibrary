@@ -1,42 +1,42 @@
 //
 //  UIColor+PCLExtensions.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "UIColor+PCLExtensions.h"
+#import <PublicCodeLibrary/UIColor+PCLExtensions.h>
 
 
 @implementation UIColor (PCLExtensions)
 
-- (CGFloat)red
+- (CGFloat)pcl_red
 {
     const CGFloat * aColor = CGColorGetComponents(self.CGColor);
     return aColor[0];
 }
 
-- (CGFloat)green
+- (CGFloat)pcl_green
 {
     const CGFloat * aColor = CGColorGetComponents(self.CGColor);
     return aColor[1];
 }
 
-- (CGFloat)blue
+- (CGFloat)pcl_blue
 {
     const CGFloat * aColor = CGColorGetComponents(self.CGColor);
     return aColor[2];
 }
 
-- (CGFloat)alpha
+- (CGFloat)pcl_alpha
 {
     return CGColorGetAlpha(self.CGColor);
 }
 
-+ (UIColor*)colorWithRed:(NSUInteger)redValue 
-                   green:(NSUInteger)greenValue
-                    blue:(NSUInteger)blueValue
++ (UIColor*)pcl_colorWithRed:(NSUInteger)redValue
+					   green:(NSUInteger)greenValue
+						blue:(NSUInteger)blueValue
 {
 	NSUInteger max = 255;
     return [UIColor colorWithRed:MIN(redValue,max)/255.0f
@@ -45,11 +45,11 @@
                     alpha:1.0f];
 }
 
-+ (UIColor*)randomColor
++ (UIColor*)pcl_randomColor
 {
-    return [self colorWithRed:arc4random()%256
-                        green:arc4random()%256
-                         blue:arc4random()%256];
+    return [self pcl_colorWithRed:arc4random()%256
+							green:arc4random()%256
+							 blue:arc4random()%256];
 }
 
 @end

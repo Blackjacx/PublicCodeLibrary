@@ -1,20 +1,17 @@
-//
-//  NSURL+PCLExtensions.h
-//  PrivateCodeLibrary
-//
-//  Created by *** *** on 9/20/11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
+/*!
+ @file		NSURL+PCLExtensions.h
+ @brief		Extensions for the class NSURL
+ @author	Stefan Herold
+ @date		2012-12-16
+ @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ */
 
 @interface NSURL (PCLExtensions)
 
-// MARK: 
 // MARK URL Creation
 
-+ (NSURL *)URLWithRoot:(NSString *)root
-		path:(NSString *)path 
-		getParameters:(NSDictionary *)getParameters;
++ (NSURL *)pcl_URLWithRoot:(NSString *)root
+					  path:(NSString *)path
+			 getParameters:(NSDictionary *)getParameters;
 		
 @end

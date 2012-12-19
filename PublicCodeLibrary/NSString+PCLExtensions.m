@@ -1,19 +1,23 @@
 /*!
+ @file		NSSTring+PCLExtensions.m
  @brief		NSString category based extensions
- @author	*** ***
+ @author	Stefan Herold
  @date		2011-10-24
- @copyright	Copyright (c) 2012 Blackjacx & Co. All rights reserved.
+ @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import "NSString+PCLExtensions.h"
+#import <PublicCodeLibrary/NSString+PCLExtensions.h>
+#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
+#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
 
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (PCLExtensions)
 
-// MARK: 
+
 // MARK: Lorem Ipsum Generation
 
-+ (NSString*) loremIpsumWithValue:(NSUInteger)aLengthOrCount type:(NSStringLoremIpsumType)aType
++ (NSString*)pcl_loremIpsumWithValue:(NSUInteger)aLengthOrCount type:(NSStringLoremIpsumType)aType
 {
 	NSString * result;
 	NSString * const separationString = @" ";
@@ -39,8 +43,8 @@
 		case NSStringLoremIpsumTypeLength:
 		case NSStringLoremIpsumTypeMaxLength: {
 			if( aLengthOrCount > loremIpsumBaseString.length ) {
-				NSString * tmpString = [[loremIpsumBaseString stringByAppendingString:separationString] 
-						repeat:(NSUInteger)(aLengthOrCount / loremIpsumBaseString.length + 1)];
+				NSString * tmpString = [[loremIpsumBaseString stringByAppendingString:separationString]
+						pcl_repeat:(NSUInteger)(aLengthOrCount / loremIpsumBaseString.length + 1)];
 				result = [tmpString substringToIndex:aLengthOrCount];
 			}
 			else {
@@ -68,26 +72,26 @@
 	return result;
 }
 
-+ (NSString*) loremIpsumWithLength:(NSUInteger)aLength {
-	return [self loremIpsumWithValue:NSStringLoremIpsumTypeLength type:aLength];
++ (NSString*)pcl_loremIpsumWithLength:(NSUInteger)aLength {
+	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeLength type:aLength];
 }
 
-+ (NSString*) loremIpsumWithMaxLength:(NSUInteger)aLength {
-	return [self loremIpsumWithValue:NSStringLoremIpsumTypeMaxLength type:aLength];
++ (NSString*)pcl_loremIpsumWithMaxLength:(NSUInteger)aLength {
+	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeMaxLength type:aLength];
 }
 
-+ (NSString*) loremIpsumWithWords:(NSUInteger)aCount {
-	return [self loremIpsumWithValue:NSStringLoremIpsumTypeWords type:aCount];
++ (NSString*)pcl_loremIpsumWithWords:(NSUInteger)aCount {
+	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeWords type:aCount];
 }
 
-+ (NSString*) loremIpsumWithMaxWords:(NSUInteger)aCount {
-	return [self loremIpsumWithValue:NSStringLoremIpsumTypeMaxWords type:aCount];
++ (NSString*)pcl_loremIpsumWithMaxWords:(NSUInteger)aCount {
+	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeMaxWords type:aCount];
 }
 
-// MARK: 
+
 // MARK: Repeating Strings
 
-- (NSString*)repeat:(NSUInteger)times {
+- (NSString*)pcl_repeat:(NSUInteger)times {
 	NSMutableString * mutableResult = [self mutableCopy];
 	for( NSUInteger i=0; i<times; i++ ) {
 		[mutableResult appendString:self];
@@ -97,10 +101,10 @@
 	return immutableResult;
 }
 
-// MARK: 
+
 // MARK: URL Encoding
 
-- (NSString *)URLEncodedString 
+- (NSString *)pcl_URLEncodedString
 {
     if (self == nil)
 		return nil;
@@ -120,7 +124,7 @@
 	return result;
 }
 
-- (NSString *)URLDecodedString
+- (NSString *)pcl_URLDecodedString
 {
 	CFStringRef resultRef = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
 																						   (CFStringRef)self,
@@ -131,10 +135,10 @@
 	return result;
 }
 
-// MARK: 
-// MARK: UUID Generation
 
-+ (NSString*)uniqueID
+// MARK: UDID Generation
+
++ (NSString*)pcl_uniqueID
 {
     CFUUIDRef uuidRef = CFUUIDCreate(kCFAllocatorDefault);
 	CFStringRef uuidStringRef = CFUUIDCreateString(kCFAllocatorDefault,uuidRef);
@@ -144,35 +148,35 @@
 	return uuid;
 }
 
-// MARK: 
+
 // MARK: Comparison
 
-- (BOOL)isNotEqualToString:(NSString*)aString
+- (BOOL)pcl_isNotEqualToString:(NSString*)aString
 {
     return [self compare:aString] != NSOrderedSame;
 }
 
-- (BOOL)isLowerToString:(NSString*)aString
+- (BOOL)pcl_isLowerToString:(NSString*)aString
 {
     return [self compare:aString] == NSOrderedAscending;
 }
 
-- (BOOL)isLowerEqualToString:(NSString*)aString
+- (BOOL)pcl_isLowerEqualToString:(NSString*)aString
 {
     return [self compare:aString] != NSOrderedDescending;
 }
 
-// MARK: 
+
 // MARK: Truncation
 
-- (NSString*)trim
+- (NSString*)pcl_trim
 {
     return [self stringByTrimmingCharactersInSet:
             [NSCharacterSet 
              whitespaceAndNewlineCharacterSet]];
 }
 
-- (NSString*)truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont
+- (NSString*)pcl_truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont
 {
     NSMutableString * result  = [self mutableCopy];
     NSString * const ellipsis = @"...";
@@ -194,18 +198,23 @@
     return result;
 }
 
-// MARK: 
-// MARK: Strings Length 
 
-- (BOOL)empty
-{
-    return [[self trim] length] == 0;
+// MARK: Length Related
+
+- (BOOL)pcl_isEmpty {
+
+    return [[self pcl_trim] length] == 0;
 }
 
-// MARK: 
+- (BOOL)pcl_isNotEmpty {
+
+	return ![self pcl_isEmpty];
+}
+
+
 // MARK: File Paths
 
-- (NSString*)concatWithDocumentsDirectoryPath
+- (NSString*)pcl_concatWithDocumentsDirectoryPath
 {
     NSString * result = nil;    
     NSError * anError = nil;
@@ -225,7 +234,7 @@
     return result;
 }
 
-- (NSString*)concatWithTemporaryDirectoryPath
+- (NSString*)pcl_concatWithTemporaryDirectoryPath
 {
     NSString * result = nil;    
     NSError * anError = nil;
@@ -245,10 +254,10 @@
     return result;    
 }
 
-// MARK: 
-// MARK: Regular Expression Checking
 
-- (BOOL)matchesRegularExpression:(NSString*)regexPattern
+// MARK: Regular Expression Checking / Validation
+
+- (BOOL)pcl_matchesRegularExpression:(NSString*)regexPattern
 {
 	NSError * error = nil;
 	
@@ -276,4 +285,130 @@
 	return YES;
 }
 
+- (BOOL)pcl_isValidEmail
+{
+	// This one is better than the one from the net below.
+	// It declines domains with more than 4 characters.
+	// The below one does this not (but it should - there must be an error).
+	NSString * const emailRegex = @"([A-Z0-9a-z_%+-]|([A-Z0-9a-z_%+-]+[A-Z0-9a-z._%+-]*[^.]))@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+
+	// --- found at: http://www.regular-expressions.info/email.html (read the discussion)
+	//	NSString * const emailRegex = @"^[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,4}$";
+
+	BOOL result = [self pcl_matchesRegularExpression:emailRegex];
+
+	if( result ) {
+		// --- check for multiple dots
+		NSString * const multipleDotsRegex = @"^.*[.]{2,}.*$";
+		result = ![self pcl_matchesRegularExpression:multipleDotsRegex];
+	}
+
+    if (result) {
+
+        // --- check for @@
+        NSString * twoAt = @"@@";
+        NSRange range = [self rangeOfString:twoAt];
+        result = !(range.length > 0);
+    }
+	return result;
+}
+
+
+// MARK: SHA512 Hash Generation
+
+- (NSString*)pcl_sha512HashFromUTF8String
+{
+	NSData * const stringData = [self dataUsingEncoding:NSUTF8StringEncoding
+								   allowLossyConversion:NO];
+	// Create a SHA512 digest and store it in digest
+	uint8_t digest[CC_SHA512_DIGEST_LENGTH] = {0};
+	CC_SHA512(stringData.bytes, stringData.length, digest);
+
+	// Now convert to NSData structure to make it usable again
+    NSData * const hashedData = [NSData dataWithBytes:digest length:CC_SHA512_DIGEST_LENGTH];
+	NSString * hashString = [hashedData description];
+	hashString = [hashString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    hashString = [hashString stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    hashString = [hashString stringByReplacingOccurrencesOfString:@">" withString:@""];
+
+	return hashString;
+}
+
+
+// MARK: Formatting
+
++ (NSString *)pcl_stringByConvertingBytesToHumanReadableFormat:(PCLFileSize)bytes {
+
+	NSString * result = @"";
+
+	// > 1 TB
+	if ( bytes > 0x10000000000 ) {
+
+		result = [NSString stringWithFormat:@"%.2f TB", bytes / (double)0x10000000000];
+	}
+	// > 1 GB
+	else if( bytes > 0x40000000 ) {
+
+		result = [NSString stringWithFormat:@"%.2f GB", bytes / (double)0x40000000];
+	}
+	// > 1 MB
+	else if( bytes > 0x100000 ) {
+
+		result = [NSString stringWithFormat:@"%.2f MB", bytes / (double)0x100000];
+	}
+	// > 1 kB
+	else if( bytes > 0x400 ) {
+
+		result = [NSString stringWithFormat:@"%lld kB", bytes / 0x400];
+	}
+	else {
+
+		result = [NSString stringWithFormat:@"%lld Byte", bytes];
+	}
+	return result;
+}
+
++ (NSString*)pcl_stringFromTimeInSeconds:(NSTimeInterval)timeInSeconds includeHoursInMinutesIfUnderAnHour:(BOOL)includeHoursInMinutes;
+{
+	NSString * result = nil;
+
+	if( timeInSeconds > 0 ) {
+		NSInteger timeIntervalAsInteger = (NSInteger)timeInSeconds;
+		NSInteger hours 				= timeIntervalAsInteger / 3600;
+		NSInteger minutes 				= (timeIntervalAsInteger - (hours*3600)) / 60;
+		NSInteger minutesWithHours 		= timeIntervalAsInteger / 60;
+		NSInteger seconds 				= timeIntervalAsInteger % 60;
+
+		result = ( includeHoursInMinutes && ( minutesWithHours < 60 ) )
+		? [NSString stringWithFormat:@"%02d:%02d", minutesWithHours, seconds]
+		: [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+	}
+	else {
+		result = includeHoursInMinutes ? @"00:00" : @"00:00:00";
+	}
+
+	return result;
+}
+
+
+// MARK: User Agent Generation
+
++ (NSString*)pcl_userAgentString
+{
+	NSString *result = [NSString stringWithFormat:@"%@/%@/iOS/%@/%@",
+						[[UIApplication pcl_applicationName]
+						 stringByReplacingOccurrencesOfString:@" "
+						 withString:@"_"],
+						[[UIApplication pcl_appVersion]
+						 stringByReplacingOccurrencesOfString:@" "
+						 withString:@"_"],
+						[[[UIDevice currentDevice] systemVersion]
+						 stringByReplacingOccurrencesOfString:@" "
+						 withString:@"_"],
+						[[[UIDevice currentDevice] pcl_machine]
+						 stringByReplacingOccurrencesOfString:@" "
+						 withString:@"_"]];
+
+	return result;
+}
 @end

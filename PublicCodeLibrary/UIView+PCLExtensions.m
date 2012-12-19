@@ -1,20 +1,19 @@
 //
 //  UIView+PCLExtensions.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "UIView+PCLExtensions.h"
-#import <QuartzCore/QuartzCore.h>
+#import <PublicCodeLibrary/UIView+PCLExtensions.h>
 
 @implementation UIView (PCLExtensions)
 
 // MARK: 
 // MARK: Animations
 
-- (void)jump
+- (void)pcl_jump
 {
     CGAffineTransform upJump = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, -25);
     CGAffineTransform downJump = CGAffineTransformTranslate(CGAffineTransformIdentity, 0,  25);
@@ -41,20 +40,20 @@
 // MARK: 
 // MARK: Style
 
-- (void)enableRoundRect
+- (void)pcl_enableRoundRect
 {
-    [self enableRoundRectWithRadius:5.0f];
+    [self pcl_enableRoundRectWithRadius:5.0f];
 }
 
-- (void)enableRoundRectWithRadius:(CGFloat)aRadius
+- (void)pcl_enableRoundRectWithRadius:(CGFloat)aRadius
 {
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = aRadius;
 }
 
-- (void)enableRoundRectWithRadius:(CGFloat)aRadius borderWidth:(CGFloat)aWidth borderColor:(UIColor*)aColor
+- (void)pcl_enableRoundRectWithRadius:(CGFloat)aRadius borderWidth:(CGFloat)aWidth borderColor:(UIColor*)aColor
 {
-    [self enableRoundRectWithRadius:aRadius];
+    [self pcl_enableRoundRectWithRadius:aRadius];
     self.layer.borderWidth = aWidth;
     self.layer.borderColor = aColor.CGColor;
 }

@@ -1,17 +1,16 @@
 //
 //  NSArray+PCLExtensions.m
-//  PrivateCodeLibrary
+//  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Blackjacx. All rights reserved.
+//  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import "NSArray+PCLExtensions.h"
-
+#import <PublicCodeLibrary/NSArray+PCLExtensions.h>
 
 @implementation NSArray (PCLExtensions)
 
-- (id)firstObject
+- (id)pcl_firstObject
 {
     if ( [self count] == 0 ) 
     {
@@ -20,7 +19,7 @@
     return self[0];
 }
 
-- (NSArray*)sortedWithKey:(NSString*)aKey ascending:(BOOL)sortAscending
+- (NSArray*)pcl_sortedWithKey:(NSString*)aKey ascending:(BOOL)sortAscending
 {
     NSSortDescriptor * const aSortDescriptor = [[NSSortDescriptor alloc]
                                                     initWithKey:aKey 
