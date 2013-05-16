@@ -1,7 +1,8 @@
 PublicCodeLibrary
 =================
 
-An Xcode 4 project to build a Real Static Universal Framework (armv7, armv7s, simulator) of my iOS library. The library simplifies daily development by providing useful and well documented code (e.g categories, wrapper classes, ...)
+An Xcode 4 project to build a static library of my iOS library. You need to build for Simulator as well as for your favourite architecture and link all together to get a universal library.
+The library simplifies daily development by providing useful and well documented code (e.g categories, wrapper classes, ...).
 
 Next Steps / History
 --------------------
