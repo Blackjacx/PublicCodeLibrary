@@ -43,7 +43,6 @@
 		B962F40316795C810004221B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PublicCodeLibrary-Info.plist"; sourceTree = "<group>"; };
 		B962F40916795C810004221B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicCodeLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		B962F41116795CBC0004221B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B962F41316795CC20004221B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B962F41516795CC90004221B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +69,7 @@
 		B962F42D16795D140004221B /* UIView+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PCLExtensions.m"; sourceTree = "<group>"; };
 		B96E92DB17452BDA0046690A /* libPublicCodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPublicCodeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96E92E717452E9E0046690A /* PublicCodeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
+		B96E92E8174530800046690A /* PublicCodeLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicCodeLibrary-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +165,7 @@
 		B993AC8C167E416C003FE068 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B962F40B16795C810004221B /* PublicCodeLibrary-Prefix.pch */,
+				B96E92E8174530800046690A /* PublicCodeLibrary-Prefix.pch */,
 				B962F40716795C810004221B /* PublicCodeLibrary-Info.plist */,
 				B962F40816795C810004221B /* InfoPlist.strings */,
 				B9387AF916796A9C000CB216 /* README.md */,
