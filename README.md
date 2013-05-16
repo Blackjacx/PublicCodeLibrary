@@ -6,14 +6,15 @@ An Xcode 4 project to build a Real Static Universal Framework (armv7, armv7s, si
 Next Steps / History
 --------------------
 
-- include Cocoa Limberjack Logging Framework - if not GPL
+- make it a CocoaPods project to support this really nice package manager
 - realize Base64 coding in its own class with the group crypto to better abstract this  and be able to have some crypto classes in future
 - include documentation building script
 - enhance documentation
+- ~~include Cocoa Limberjack Logging Framework - if not GPL~~
 - give category methods "pcl_" prefix to easily find them with code completion in main project √
 
-License
--------
+License (MIT)
+-------------
 
 Copyright (c) 2012 Stefan Herold
 
