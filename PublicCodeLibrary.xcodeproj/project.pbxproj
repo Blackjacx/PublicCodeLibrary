@@ -58,7 +58,6 @@
 		B962F41F16795D140004221B /* PCLRestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLRestCommand.h; sourceTree = "<group>"; };
 		B962F42016795D140004221B /* PCLRestCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLRestCommand.m; sourceTree = "<group>"; };
 		B962F42116795D140004221B /* PCLStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLStrings.h; sourceTree = "<group>"; };
-		B962F42316795D140004221B /* PublicCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
 		B962F42416795D140004221B /* UIApplication+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F42516795D140004221B /* UIApplication+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F42616795D140004221B /* UIColor+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PCLExtensions.h"; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		B962F42C16795D140004221B /* UIView+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F42D16795D140004221B /* UIView+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PCLExtensions.m"; sourceTree = "<group>"; };
 		B96E92DB17452BDA0046690A /* libPublicCodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPublicCodeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96E92E717452E9E0046690A /* PublicCodeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				B927BDA7167A2665007EB59E /* PCLDebugging.h */,
 				B962F42116795D140004221B /* PCLStrings.h */,
 				B927BDC4167A2665007EB59E /* PCLTypeDefs.h */,
-				B962F42316795D140004221B /* PublicCodeLibrary.h */,
+				B96E92E717452E9E0046690A /* PublicCodeLibrary.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
