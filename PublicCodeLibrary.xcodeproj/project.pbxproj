@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B9028C031745438200058071 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B927BD96167A25AF007EB59E /* UIViewConroller+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewConroller+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewConroller+PCLExtensions.m"; sourceTree = "<group>"; };
 		B927BDCA167A2665007EB59E /* NSData+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PCLExtensions.h"; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 				B96E93211745354E0046690A /* PublicCodeLibrary-Info.plist */,
 				B96E9303174535050046690A /* PublicCodeLibrary-Prefix.pch */,
 				B9387AF916796A9C000CB216 /* README.md */,
+				B9028C031745438200058071 /* LICENSE */,
 			);
 			name = "Supporting Files";
 			path = Resources;
@@ -388,6 +390,7 @@
 				B96E92E617452BDA0046690A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
