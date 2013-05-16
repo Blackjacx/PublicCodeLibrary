@@ -2,13 +2,6 @@
 // Prefix header for all source files of the 'PublicCodeLibrary' target in the 'PublicCodeLibrary' project
 //
 
-#import <Availability.h>
-
 #ifdef __OBJC__
-
-#import <Foundation/Foundation.h>
-#import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
-#import <CoreGraphics/CoreGraphics.h>
-
+	#import <Foundation/Foundation.h>
 #endif
