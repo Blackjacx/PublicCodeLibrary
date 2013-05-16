@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B96E92DC17452BDA0046690A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F40316795C810004221B /* Foundation.framework */; };
-		B96E92E117452BDA0046690A /* PublicCodeLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B96E92E017452BDA0046690A /* PublicCodeLibrary.h */; };
-		B96E92E317452BDA0046690A /* PublicCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E92E217452BDA0046690A /* PublicCodeLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +17,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				B96E92E117452BDA0046690A /* PublicCodeLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +70,6 @@
 		B962F42C16795D140004221B /* UIView+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F42D16795D140004221B /* UIView+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PCLExtensions.m"; sourceTree = "<group>"; };
 		B96E92DB17452BDA0046690A /* libPublicCodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPublicCodeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96E92DF17452BDA0046690A /* PublicCodeLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicCodeLibrary-Prefix.pch"; sourceTree = "<group>"; };
-		B96E92E017452BDA0046690A /* PublicCodeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
-		B96E92E217452BDA0046690A /* PublicCodeLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCodeLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +100,6 @@
 			children = (
 				B962F40516795C810004221B /* PublicCodeLibrary */,
 				B993AC8C167E416C003FE068 /* Supporting Files */,
-				B96E92DD17452BDA0046690A /* PublicCodeLibrary */,
 				B962F40216795C810004221B /* Frameworks */,
 				B962F40116795C810004221B /* Products */,
 			);
@@ -167,24 +160,6 @@
 				B9C1132616820D0700DCA97A /* Categories */,
 			);
 			name = UI;
-			sourceTree = "<group>";
-		};
-		B96E92DD17452BDA0046690A /* PublicCodeLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				B96E92E017452BDA0046690A /* PublicCodeLibrary.h */,
-				B96E92E217452BDA0046690A /* PublicCodeLibrary.m */,
-				B96E92DE17452BDA0046690A /* Supporting Files */,
-			);
-			path = PublicCodeLibrary;
-			sourceTree = "<group>";
-		};
-		B96E92DE17452BDA0046690A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B96E92DF17452BDA0046690A /* PublicCodeLibrary-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B993AC8C167E416C003FE068 /* Supporting Files */ = {
@@ -295,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96E92E317452BDA0046690A /* PublicCodeLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
