@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
-#import <PublicCodeLibrary/NSString+PCLExtensions.h>
+#import "UIApplication+PCLExtensions.h"
+#import "NSString+PCLExtensions.h"
 
 @implementation UIApplication (PCLExtensions)
 

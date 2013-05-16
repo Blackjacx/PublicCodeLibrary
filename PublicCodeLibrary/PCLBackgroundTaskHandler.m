@@ -6,8 +6,8 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/PCLBackgroundTaskHandler.h>
-#import <PublicCodeLibrary/NSObject+PCLExtensions.h>
+#import "PCLBackgroundTaskHandler.h"
+#import "NSObject+PCLExtensions.h"
 
 @interface PCLBackgroundTaskHandler ()
 

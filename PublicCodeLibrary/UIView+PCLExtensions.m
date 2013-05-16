@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/UIView+PCLExtensions.h>
+#import "UIView+PCLExtensions.h"
 
 @implementation UIView (PCLExtensions)
 

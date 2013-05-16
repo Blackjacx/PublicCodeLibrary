@@ -6,7 +6,7 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/PCLTypeDefs.h>
+#import "PCLTypeDefs.h"
 
 /*!
  @typedef NSStringLoremIpsumType

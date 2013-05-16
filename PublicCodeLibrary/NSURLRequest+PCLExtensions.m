@@ -6,7 +6,7 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/NSURLRequest+PCLExtensions.h>
+#import "NSURLRequest+PCLExtensions.h"
 
 @implementation NSURLRequest (PCLExtensions)
 

@@ -6,8 +6,8 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/NSURL+PCLExtensions.h>
-#import <PublicCodeLibrary/NSString+PCLExtensions.h>
+#import "NSURL+PCLExtensions.h"
+#import "NSString+PCLExtensions.h"
 
 @implementation NSURL (PCLExtensions)
 

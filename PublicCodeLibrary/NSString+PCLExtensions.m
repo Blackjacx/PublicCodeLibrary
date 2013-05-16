@@ -6,9 +6,9 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/NSString+PCLExtensions.h>
-#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
-#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
+#import "NSString+PCLExtensions.h"
+#import "UIApplication+PCLExtensions.h"
+#import "UIDevice+PCLExtensions.h"
 
 #import <CommonCrypto/CommonDigest.h>
 

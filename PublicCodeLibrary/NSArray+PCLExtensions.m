@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/NSArray+PCLExtensions.h>
+#import "NSArray+PCLExtensions.h"
 
 @implementation NSArray (PCLExtensions)
 

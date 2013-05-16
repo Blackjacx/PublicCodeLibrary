@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/UIImage+PCLExtensions.h>
+#import "UIImage+PCLExtensions.h"
 
 @implementation UIImage (PCLExtensions)
 

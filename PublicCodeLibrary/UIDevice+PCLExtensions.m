@@ -12,7 +12,7 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 
-#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
+#import "UIDevice+PCLExtensions.h"
 
 @implementation UIDevice (PCLExtensions)
 

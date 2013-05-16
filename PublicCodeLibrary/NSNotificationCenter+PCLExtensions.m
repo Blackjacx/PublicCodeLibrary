@@ -6,7 +6,7 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodeLibrary/NSNotificationCenter+PCLExtensions.h>
+#import "NSNotificationCenter+PCLExtensions.h"
 
 @implementation NSNotificationCenter (PCLExtensions)
 

@@ -6,7 +6,7 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
-#import <PublicCodelibrary/NSObject+PCLExtensions.h>
+#import "NSObject+PCLExtensions.h"
 
 @implementation NSObject (PCLExtensions)
 

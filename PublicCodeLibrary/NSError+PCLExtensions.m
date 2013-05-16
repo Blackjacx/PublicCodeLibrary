@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/NSError+PCLExtensions.h>
-#import <PublicCodeLibrary/PCLStrings.h>
+#import "NSError+PCLExtensions.h"
+#import "PCLStrings.h"
 
 PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForFailureReason,		@"FR_");
 PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForErrorDescription,	@"ED_");

@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/UIColor+PCLExtensions.h>
+#import "UIColor+PCLExtensions.h"
 
 
 @implementation UIColor (PCLExtensions)

@@ -10,29 +10,29 @@
  */
 
 // MARK: Core
-#import <PublicCodeLibrary/PCLDebugging.h>
-#import <PublicCodeLibrary/PCLStrings.h>
-#import <PublicCodeLibrary/PCLTypeDefs.h>
+#import "PCLDebugging.h"
+#import "PCLStrings.h"
+#import "PCLTypeDefs.h"
 
 // MARK: Foundation Additions
-#import <PublicCodeLibrary/NSArray+PCLExtensions.h>
-#import <PublicCodeLibrary/NSData+PCLExtensions.h>
-#import <PublicCodeLibrary/NSDate+PCLExtensions.h>
-#import <PublicCodeLibrary/NSError+PCLExtensions.h>
-#import <PublicCodeLibrary/NSNotificationCenter+PCLExtensions.h>
-#import <PublicCodeLibrary/NSObject+PCLExtensions.h>
-#import <PublicCodeLibrary/NSString+PCLExtensions.h>
-#import <PublicCodeLibrary/NSURL+PCLExtensions.h>
-#import <PublicCodeLibrary/NSURLRequest+PCLExtensions.h>
-#import <PublicCodeLibrary/PCLBackgroundTaskHandler.h>
+#import "NSArray+PCLExtensions.h"
+#import "NSData+PCLExtensions.h"
+#import "NSDate+PCLExtensions.h"
+#import "NSError+PCLExtensions.h"
+#import "NSNotificationCenter+PCLExtensions.h"
+#import "NSObject+PCLExtensions.h"
+#import "NSString+PCLExtensions.h"
+#import "NSURL+PCLExtensions.h"
+#import "NSURLRequest+PCLExtensions.h"
+#import "PCLBackgroundTaskHandler.h"
 
 // MARK: UIKit Extensions
-#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
-#import <PublicCodeLibrary/UIColor+PCLExtensions.h>
-#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
-#import <PublicCodeLibrary/UIImage+PCLExtensions.h>
-#import <PublicCodeLibrary/UIView+PCLExtensions.h>
-#import <PublicCodeLibrary/UIViewConroller+PCLExtensions.h>
+#import "UIApplication+PCLExtensions.h"
+#import "UIColor+PCLExtensions.h"
+#import "UIDevice+PCLExtensions.h"
+#import "UIImage+PCLExtensions.h"
+#import "UIView+PCLExtensions.h"
+#import "UIViewConroller+PCLExtensions.h"
 
 // MARK: Backend
-#import <PublicCodeLibrary/PCLRestCommand.h>
+#import "PCLRestCommand.h"

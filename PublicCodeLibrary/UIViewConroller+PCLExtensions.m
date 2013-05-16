@@ -6,7 +6,7 @@
 //  Copyright 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/UIViewConroller+PCLExtensions.h>
+#import "UIViewConroller+PCLExtensions.h"
 
 @implementation UIViewController (PCLExtensions)
 

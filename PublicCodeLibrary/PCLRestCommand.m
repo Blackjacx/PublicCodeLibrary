@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 Stefan Herold. All rights reserved.
 //
 
-#import <PublicCodeLibrary/PCLRestCommand.h>
-#import <PublicCodeLibrary/PCLStrings.h>
-#import <PublicCodeLibrary/NSString+PCLExtensions.h>
-#import <PublicCodeLibrary/NSURL+PCLExtensions.h>
-#import <PublicCodeLibrary/UIApplication+PCLExtensions.h>
-#import <PublicCodeLibrary/UIDevice+PCLExtensions.h>
+#import "PCLRestCommand.h"
+#import "PCLStrings.h"
+#import "NSString+PCLExtensions.h"
+#import "NSURL+PCLExtensions.h"
+#import "UIApplication+PCLExtensions.h"
+#import "UIDevice+PCLExtensions.h"
 
 static CGFloat const PCLRestOperationDefaultTimeout = 30.0;
 
