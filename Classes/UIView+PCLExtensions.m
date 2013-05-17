@@ -7,6 +7,7 @@
 //
 
 #import "UIView+PCLExtensions.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (PCLExtensions)
 
