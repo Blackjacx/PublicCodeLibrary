@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B917BDA917462F03004560BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41516795CC90004221B /* CoreGraphics.framework */; };
+		B917BDAA17462F0A004560BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41316795CC20004221B /* QuartzCore.framework */; };
+		B917BDAB17462F0F004560BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41116795CBC0004221B /* UIKit.framework */; };
 		B96E92DC17452BDA0046690A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F40316795C810004221B /* Foundation.framework */; };
 		B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E92FF174535040046690A /* PCLBackgroundTaskHandler.m */; };
 		B96E9326174535C10046690A /* PCLRestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E9325174535C10046690A /* PCLRestCommand.m */; };
@@ -80,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B917BDAB17462F0F004560BE /* UIKit.framework in Frameworks */,
+				B917BDAA17462F0A004560BE /* QuartzCore.framework in Frameworks */,
+				B917BDA917462F03004560BE /* CoreGraphics.framework in Frameworks */,
 				B96E92DC17452BDA0046690A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
