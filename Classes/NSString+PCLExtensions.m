@@ -73,19 +73,19 @@
 }
 
 + (NSString*)pcl_loremIpsumWithLength:(NSUInteger)aLength {
-	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeLength type:aLength];
+	return [self pcl_loremIpsumWithValue:aLength type:NSStringLoremIpsumTypeLength];
 }
 
 + (NSString*)pcl_loremIpsumWithMaxLength:(NSUInteger)aLength {
-	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeMaxLength type:aLength];
+	return [self pcl_loremIpsumWithValue:aLength type:NSStringLoremIpsumTypeMaxLength];
 }
 
 + (NSString*)pcl_loremIpsumWithWords:(NSUInteger)aCount {
-	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeWords type:aCount];
+	return [self pcl_loremIpsumWithValue:aCount type:NSStringLoremIpsumTypeWords];
 }
 
 + (NSString*)pcl_loremIpsumWithMaxWords:(NSUInteger)aCount {
-	return [self pcl_loremIpsumWithValue:NSStringLoremIpsumTypeMaxWords type:aCount];
+	return [self pcl_loremIpsumWithValue:aCount type:NSStringLoremIpsumTypeMaxWords];
 }
 
 
