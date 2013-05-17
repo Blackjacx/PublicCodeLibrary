@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # Specify the license type. CocoaPods detects automatically the license file if it is named
   # 'LICENCE*.*' or 'LICENSE*.*', however if the name is different, specify it.
   # s.license      = 'MIT (example)'
-  # s.license      = { :type => 'MIT (example)', :file => 'FILE_LICENSE' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   # Specify the authors of the library, with email addresses. You can often find
   # the email addresses of the authors by using the SCM log. E.g. $ git log
@@ -70,19 +70,13 @@ Pod::Spec.new do |s|
   # target bundle with a build phase script.
   #
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "Resources/*.png"
 
   # A list of paths to preserve after installing the Pod.
   # CocoaPods cleans by default any file that is not used.
   # Please don't include documentation, example, and test files.
   #
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-  # Specify a list of frameworks that the application needs to link
-  # against for this Pod to work.
-  #
-  # s.framework  = 'SomeFramework'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
 
   # Specify a list of libraries that the application needs to link
   # against for this Pod to work.
@@ -99,7 +93,4 @@ Pod::Spec.new do |s|
   #
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
-  # Finally, specify any Pods that this Pod depends on.
-  #
-  # s.dependency 'JSONKit', '~> 1.4'
 end
