@@ -10,6 +10,21 @@
 		B917BDA917462F03004560BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41516795CC90004221B /* CoreGraphics.framework */; };
 		B917BDAA17462F0A004560BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41316795CC20004221B /* QuartzCore.framework */; };
 		B917BDAB17462F0F004560BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F41116795CBC0004221B /* UIKit.framework */; };
+		B917BDAD174631E1004560BE /* NSArray+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41816795D140004221B /* NSArray+PCLExtensions.m */; };
+		B917BDAE174631EE004560BE /* NSData+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDCB167A2665007EB59E /* NSData+PCLExtensions.m */; };
+		B917BDAF174631EE004560BE /* NSDate+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDCD167A2665007EB59E /* NSDate+PCLExtensions.m */; };
+		B917BDB0174631EE004560BE /* NSError+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41A16795D140004221B /* NSError+PCLExtensions.m */; };
+		B917BDB1174631EE004560BE /* NSNotificationCenter+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDD3167A2665007EB59E /* NSNotificationCenter+PCLExtensions.m */; };
+		B917BDB2174631EE004560BE /* NSObject+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDD5167A2665007EB59E /* NSObject+PCLExtensions.m */; };
+		B917BDB3174631EE004560BE /* NSString+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41C16795D140004221B /* NSString+PCLExtensions.m */; };
+		B917BDB4174631EE004560BE /* NSURL+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41E16795D140004221B /* NSURL+PCLExtensions.m */; };
+		B917BDB5174631EE004560BE /* NSURLRequest+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDE3167A2665007EB59E /* NSURLRequest+PCLExtensions.m */; };
+		B917BDBB17463213004560BE /* UIApplication+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42516795D140004221B /* UIApplication+PCLExtensions.m */; };
+		B917BDBC17463213004560BE /* UIColor+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42716795D140004221B /* UIColor+PCLExtensions.m */; };
+		B917BDBD17463213004560BE /* UIDevice+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42916795D140004221B /* UIDevice+PCLExtensions.m */; };
+		B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42B16795D140004221B /* UIImage+PCLExtensions.m */; };
+		B917BDBF17463213004560BE /* UIView+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42D16795D140004221B /* UIView+PCLExtensions.m */; };
+		B917BDC017463213004560BE /* UIViewConroller+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */; };
 		B96E92DC17452BDA0046690A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962F40316795C810004221B /* Foundation.framework */; };
 		B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E92FF174535040046690A /* PCLBackgroundTaskHandler.m */; };
 		B96E9326174535C10046690A /* PCLRestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E9325174535C10046690A /* PCLRestCommand.m */; };
@@ -283,6 +298,21 @@
 			files = (
 				B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */,
 				B96E9326174535C10046690A /* PCLRestCommand.m in Sources */,
+				B917BDAD174631E1004560BE /* NSArray+PCLExtensions.m in Sources */,
+				B917BDAE174631EE004560BE /* NSData+PCLExtensions.m in Sources */,
+				B917BDAF174631EE004560BE /* NSDate+PCLExtensions.m in Sources */,
+				B917BDB0174631EE004560BE /* NSError+PCLExtensions.m in Sources */,
+				B917BDB1174631EE004560BE /* NSNotificationCenter+PCLExtensions.m in Sources */,
+				B917BDB2174631EE004560BE /* NSObject+PCLExtensions.m in Sources */,
+				B917BDB3174631EE004560BE /* NSString+PCLExtensions.m in Sources */,
+				B917BDB4174631EE004560BE /* NSURL+PCLExtensions.m in Sources */,
+				B917BDB5174631EE004560BE /* NSURLRequest+PCLExtensions.m in Sources */,
+				B917BDBB17463213004560BE /* UIApplication+PCLExtensions.m in Sources */,
+				B917BDBC17463213004560BE /* UIColor+PCLExtensions.m in Sources */,
+				B917BDBD17463213004560BE /* UIDevice+PCLExtensions.m in Sources */,
+				B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */,
+				B917BDBF17463213004560BE /* UIView+PCLExtensions.m in Sources */,
+				B917BDC017463213004560BE /* UIViewConroller+PCLExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
