@@ -7,10 +7,6 @@
 //
 
 #import "UIView+PCLExtensions.h"
-#import <UIKit/UIKit.h>
-#import <CoreGraphics/CoreGraphics.h>
-#import <QuartzCore/QuartzCore.h>
-#import <Foundation/Foundation.h>
 
 @implementation UIView (PCLExtensions)
 
