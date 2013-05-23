@@ -11,6 +11,7 @@ documented code (e.g categories, wrapper classes, ...).
 Next Steps / History
 --------------------
 
+- use a workwpace
 - make it a CocoaPods project to support this really nice package manager
 - realize Base64 coding in its own class with the group crypto to better abstract this  and be able to have some crypto classes in future
 - include documentation building script
