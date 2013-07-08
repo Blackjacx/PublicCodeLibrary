@@ -27,5 +27,4 @@ License
 ---
 
 PublicCodeLibrary is licensed under the terms of the MIT License.
-
 See the included LICENSE file.
