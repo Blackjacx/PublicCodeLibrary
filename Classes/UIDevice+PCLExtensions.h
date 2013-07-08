@@ -10,6 +10,8 @@
 
 + (BOOL)pcl_isPad;
 + (BOOL)pcl_isPhone;
++ (BOOL)pcl_isIOS7;
++ (NSUInteger)pcl_majorOSVersion;
 - (NSString *)pcl_machine;
 
 @end

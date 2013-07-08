@@ -14,6 +14,21 @@
 
 #import "UIDevice+PCLExtensions.h"
 
+/*
+ Thanks to Apple for providing this code (https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/TransitionGuide/SupportingEarlieriOS.html#//apple_ref/doc/uid/TP40013174-CH14-SW1)
+ */
+NSUInteger DeviceSystemMajorVersion();
+NSUInteger DeviceSystemMajorVersion() {
+    static NSUInteger _deviceSystemMajorVersion = -1;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _deviceSystemMajorVersion = [[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] objectAtIndex:0] intValue];
+    });
+    return _deviceSystemMajorVersion;
+}
+#define IOS_LESS_THAN_IOS7 (DeviceSystemMajorVersion() < 7)
+
+
 @implementation UIDevice (PCLExtensions)
 
 + (BOOL)pcl_isPad {
@@ -24,6 +39,15 @@
 + (BOOL)pcl_isPhone {
 
 	return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;
+}
+
++ (BOOL)pcl_isIOS7 {
+    BOOL returnValue = ((IOS_LESS_THAN_IOS7) == 0);
+    return returnValue;
+}
+
++ (NSUInteger)pcl_majorOSVersion {
+	return DeviceSystemMajorVersion();
 }
 
 - (NSString *)pcl_machine
