@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9EAA312B-7D1A-4DA4-8789-AF43BADB22EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PublicCodeLibrary</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8911FD38-BE51-41FE-B77F-2FA1FFB41429</key>
+		<string>https://github.com/Blackjacx/PublicCodeLibrary.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PublicCodeLibrary.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8911FD38-BE51-41FE-B77F-2FA1FFB41429</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Blackjacx/PublicCodeLibrary.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8911FD38-BE51-41FE-B77F-2FA1FFB41429</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8911FD38-BE51-41FE-B77F-2FA1FFB41429</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PublicCodeLibrary</string>
+		</dict>
+	</array>
+</dict>
+</plist>
