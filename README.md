@@ -11,6 +11,7 @@ documented code (e.g categories, wrapper classes, ...).
 Next Steps
 ---
 
+- new target for conveniently building a universal library
 - implement an AlertView with block action methods so one can create alert view and attached actions in one place
 - realize Base64 coding in its own class with the group crypto to better abstract this  and be able to have some crypto classes in future
 - include documentation building script
