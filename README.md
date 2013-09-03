@@ -11,7 +11,7 @@ documented code (e.g categories, wrapper classes, ...).
 Next Steps
 ---
 
-- make it a CocoaPods project to support this really nice package manager √
+- implement an AlertView with block action methods so one can create alert view and attached actions in one place
 - realize Base64 coding in its own class with the group crypto to better abstract this  and be able to have some crypto classes in future
 - include documentation building script
 - enhance documentation
@@ -21,6 +21,7 @@ Next Steps
 History
 ---
 
+- make it a CocoaPods project to support this really nice package manager
 - give category methods "pcl_" prefix to easily find them with code completion in main project. Just type 'pcl' on any category class and the code completion will do the rest
 
 License
