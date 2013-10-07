@@ -13,6 +13,10 @@
  @name Encoding and Decoding Base64
  @{
  */
+/*!
+ The NSData method from which this method is called needs to be a string with 
+ UTF8 encoding.
+ */
 - (NSString *)pcl_encodedBase64String;
 + (NSData *)pcl_decodedDataFromBase64String:(NSString *)base64String;
 //!@}

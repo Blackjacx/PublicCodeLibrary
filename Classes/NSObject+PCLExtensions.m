@@ -6,6 +6,7 @@
  @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
  */
 
+#import <Foundation/Foundation.h>
 #import "NSObject+PCLExtensions.h"
 
 @implementation NSObject (PCLExtensions)

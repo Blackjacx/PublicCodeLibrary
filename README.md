@@ -22,6 +22,7 @@ Next Steps
 History
 ---
 
+- modified base64 methods to use the newly introduced ones in iOS7 (compatible with iOS4 and above) -> Is much shorter now!
 - make it a CocoaPods project to support this really nice package manager
 - give category methods "pcl_" prefix to easily find them with code completion in main project. Just type 'pcl' on any category class and the code completion will do the rest
 
