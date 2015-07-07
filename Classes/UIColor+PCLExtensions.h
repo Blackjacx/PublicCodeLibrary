@@ -13,10 +13,10 @@
 - (CGFloat)pcl_blue;
 - (CGFloat)pcl_alpha;
 
-+ (UIColor*)pcl_colorWithRed:(NSUInteger)redValue
-					   green:(NSUInteger)greenValue
-						blue:(NSUInteger)blueValue;
++ (UIColor*)pcl_colorWithRed:(NSUInteger)redValue green:(NSUInteger)greenValue blue:(NSUInteger)blueValue alpha:(CGFloat)alpha;
 
 + (UIColor*)pcl_randomColor;
+
++ (UIColor *)pcl_colorWithHex:(unsigned int)value alpha:(float)alpha;
 
 @end
