@@ -2,6 +2,10 @@ language: objective-c
 
 osx_image: xcode6.4
 
+install:
+- "gem install xcpretty --no-rdoc --no-ri --no-document --quiet"
+- "gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet"
+
 script:
 - "set -e"
 - "set -o pipefail"
