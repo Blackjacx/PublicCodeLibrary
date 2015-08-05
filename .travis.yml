@@ -11,4 +11,4 @@ script:
 
 - "xcodebuild -showsdks"
 
-- "xcodebuild -scheme PublicCodeLibrary -sdk iphonesimulator test ONLY_ACTIVE_ARCH=NO"
+- "xcodebuild -scheme PublicCodeLibrary test"
