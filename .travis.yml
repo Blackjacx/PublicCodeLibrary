@@ -5,6 +5,7 @@ osx_image: xcode6.4
 script:
 - "set -e"
 - "set -o pipefail"
+- "ls -la"
 
 - "xcodebuild -showsdks"
 
