@@ -9,4 +9,4 @@ script:
 
 - "xcodebuild -showsdks"
 
-- "xcodebuild test -target PublicCodeLibrary -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- "xcodebuild test -target PublicCodeLibrary -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
