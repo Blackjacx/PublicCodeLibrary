@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/Blackjacx/PublicCodeLibrary.svg)](https://travis-ci.org/Blackjacx/PublicCodeLibrary)
+[![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](http://opensource.org/licenses/MIT)
+[![Version](http://cocoapod-badges.herokuapp.com/v/PublicCodeLibrary/badge.png)](http://cocoadocs.org/docsets/PublicCodeLibrary)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/PublicCodeLibrary/badge.png)](http://cocoadocs.org/docsets/PublicCodeLibrary)
+
 PublicCodeLibrary
 ===
 
