@@ -13,4 +13,4 @@ script:
 
 - "xcodebuild -showsdks"
 
-- "xcodebuild -scheme PublicCodeLibrary test"
+- "xcodebuild -scheme PublicCodeLibrary test | xcpretty -f `xcpretty-travis-formatter`"
