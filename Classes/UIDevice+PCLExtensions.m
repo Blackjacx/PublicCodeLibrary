@@ -1,10 +1,10 @@
-//
-//  UIDevice+PCLExtension.m
-//  PublicCodeLibrary
-//
-//  Created by Stefan Herold on 6/24/12.
-//  Copyright (c) 2012 Stefan Herold. All rights reserved.
-//
+/*!
+ @file		UIDevice+PCLExtension.m
+ @brief		Extensions for the class UIDevice
+ @author	Stefan Herold
+ @date		2015-07-29
+ @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ */
 
 #include <sys/types.h>
 #include <sys/sysctl.h>
@@ -26,27 +26,40 @@ NSUInteger DeviceSystemMajorVersion() {
     });
     return _deviceSystemMajorVersion;
 }
-#define IOS_LESS_THAN_IOS7 (DeviceSystemMajorVersion() < 7)
 
 
 @implementation UIDevice (PCLExtensions)
 
-+ (BOOL)pcl_isPad {
-
++ (BOOL)pcl_isPad
+{
 	return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
-+ (BOOL)pcl_isPhone {
-
++ (BOOL)pcl_isPhone
+{
 	return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;
 }
 
-+ (BOOL)pcl_isIOS7 {
-    BOOL returnValue = ((IOS_LESS_THAN_IOS7) == 0);
++ (BOOL)pcl_isIOS7OrHigher
+{
+    BOOL returnValue = DeviceSystemMajorVersion() >= 7;
     return returnValue;
 }
 
-+ (NSUInteger)pcl_majorOSVersion {
++ (BOOL)pcl_isIOS8OrHigher
+{
+    BOOL returnValue = DeviceSystemMajorVersion() >= 8;
+    return returnValue;
+}
+
++ (BOOL)pcl_isIOS9OrHigher
+{
+    BOOL returnValue = DeviceSystemMajorVersion() >= 9;
+    return returnValue;
+}
+
++ (NSUInteger)pcl_majorOSVersion
+{
 	return DeviceSystemMajorVersion();
 }
 
@@ -85,8 +98,8 @@ NSUInteger DeviceSystemMajorVersion() {
 	return result;
 }
 
-- (NSString *)pcl_macaddress {
-
+- (NSString *)pcl_macaddress
+{
     int                 mib[6];
     size_t              len;
     char                *buf;
@@ -130,12 +143,5 @@ NSUInteger DeviceSystemMajorVersion() {
 
     return outstring;
 }
-
-//- (NSString *)pcl_uniqueDeviceIdentifier {
-//	
-//    NSString * macaddress = [[UIDevice currentDevice] macaddress];
-//    NSString * uniqueIdentifier = [macaddress stringFromMD5];
-//    return uniqueIdentifier;
-//}
 
 @end

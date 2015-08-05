@@ -2,8 +2,8 @@
  @file		NSSTring+PCLExtensions.h
  @brief		Extensions for the class NSString
  @author	Stefan Herold
- @date		2011-10-24
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @date		2015-07-29
+ @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
  */
 
 #import "PCLTypeDefs.h"
@@ -75,13 +75,20 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 
 
 // MARK: Truncation
-/*!
- @name Truncation
- @{
+
+/**
+ Removes whitespaces and newline characters from the beginning and the end of the receiver.
+ @return The trimmed string.
  */
 - (NSString*)pcl_trim;
-- (NSString*)pcl_truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont;
-//!@}
+
+/**
+ Removes characters from the string until it matches the given width minus an ellipsis that is added to the string. This method is used for strings displayed on one line.
+ @param width Width the string should be truncated to.
+ @param attributes Attributed the string should be displayed with.
+ @return The truncated string.
+ */
+- (NSString*)pcl_truncatedToWidth:(CGFloat)width attributes:(NSDictionary*)attributes;
 
 
 // MARK: Length Related
@@ -89,8 +96,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
  @name Length Related
  @{
  */
-- (BOOL)pcl_isEmpty;
-- (BOOL)pcl_isNotEmpty;
++ (BOOL)pcl_isStringEmpty:(NSString *)string;
 //!@}
 
 

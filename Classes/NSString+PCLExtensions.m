@@ -1,9 +1,9 @@
 /*!
  @file		NSSTring+PCLExtensions.m
- @brief		NSString category based extensions
+ @brief		Extensions for the class NSString
  @author	Stefan Herold
- @date		2011-10-24
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @date		2015-07-29
+ @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
  */
 
 #import "NSString+PCLExtensions.h"
@@ -33,7 +33,8 @@
 		"or ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus"
 		" sollicitudin metus eget eros.";
 		
-	if ( NSStringLoremIpsumTypeMaxLength == aType || NSStringLoremIpsumTypeMaxWords == aType ) {
+	if ( NSStringLoremIpsumTypeMaxLength == aType || NSStringLoremIpsumTypeMaxWords == aType )
+    {
 		// Generate a random number between 1 (!) and the max length | count
 		aLengthOrCount = (arc4random() % aLengthOrCount) + 1;
 	}
@@ -41,29 +42,31 @@
 	switch (aType) 
 	{
 		case NSStringLoremIpsumTypeLength:
-		case NSStringLoremIpsumTypeMaxLength: {
-			if( aLengthOrCount > loremIpsumBaseString.length ) {
-				NSString * tmpString = [[loremIpsumBaseString stringByAppendingString:separationString]
-						pcl_repeat:(NSUInteger)(aLengthOrCount / loremIpsumBaseString.length + 1)];
+		case NSStringLoremIpsumTypeMaxLength:
+        {
+			if( aLengthOrCount > loremIpsumBaseString.length )
+            {
+				NSString * tmpString = [[loremIpsumBaseString stringByAppendingString:separationString] pcl_repeat:(NSUInteger)(aLengthOrCount / loremIpsumBaseString.length + 1)];
 				result = [tmpString substringToIndex:aLengthOrCount];
 			}
-			else {
+			else
+            {
 				result = [loremIpsumBaseString substringToIndex:aLengthOrCount];
 			}
 		}    
 		break;
 		
 		case NSStringLoremIpsumTypeWords:
-		case NSStringLoremIpsumTypeMaxWords: {
-			NSMutableArray * resultingWordList = [[NSMutableArray alloc] 
-					initWithCapacity:aLengthOrCount];
-			NSArray * loremIpsumExploded = [loremIpsumBaseString 
-					componentsSeparatedByString:separationString];
+		case NSStringLoremIpsumTypeMaxWords:
+        {
+			NSMutableArray * resultingWordList = [[NSMutableArray alloc] initWithCapacity:aLengthOrCount];
+			NSArray * loremIpsumExploded = [loremIpsumBaseString componentsSeparatedByString:separationString];
 			NSUInteger loremIpsumWordCount = loremIpsumExploded.count;
-			for (NSUInteger i=0; i<loremIpsumWordCount; i++) {
+			
+            for (NSUInteger i=0; i<loremIpsumWordCount; i++)
+            {
 				// Modulo for the case: requested count > word count
-				[resultingWordList addObject:
-					loremIpsumExploded[(i % loremIpsumWordCount)]];
+				[resultingWordList addObject:loremIpsumExploded[(i % loremIpsumWordCount)]];
 			}
 			result = [resultingWordList componentsJoinedByString:separationString];
 		}    
@@ -72,19 +75,23 @@
 	return result;
 }
 
-+ (NSString*)pcl_loremIpsumWithLength:(NSUInteger)aLength {
++ (NSString*)pcl_loremIpsumWithLength:(NSUInteger)aLength
+{
 	return [self pcl_loremIpsumWithValue:aLength type:NSStringLoremIpsumTypeLength];
 }
 
-+ (NSString*)pcl_loremIpsumWithMaxLength:(NSUInteger)aLength {
++ (NSString*)pcl_loremIpsumWithMaxLength:(NSUInteger)aLength
+{
 	return [self pcl_loremIpsumWithValue:aLength type:NSStringLoremIpsumTypeMaxLength];
 }
 
-+ (NSString*)pcl_loremIpsumWithWords:(NSUInteger)aCount {
++ (NSString*)pcl_loremIpsumWithWords:(NSUInteger)aCount
+{
 	return [self pcl_loremIpsumWithValue:aCount type:NSStringLoremIpsumTypeWords];
 }
 
-+ (NSString*)pcl_loremIpsumWithMaxWords:(NSUInteger)aCount {
++ (NSString*)pcl_loremIpsumWithMaxWords:(NSUInteger)aCount
+{
 	return [self pcl_loremIpsumWithValue:aCount type:NSStringLoremIpsumTypeMaxWords];
 }
 
@@ -93,12 +100,12 @@
 
 - (NSString*)pcl_repeat:(NSUInteger)times {
 	NSMutableString * mutableResult = [self mutableCopy];
-	for( NSUInteger i=0; i<times; i++ ) {
+	
+    for( NSUInteger i=0; i<times; i++ )
+    {
 		[mutableResult appendString:self];
 	}
-	NSString * immutableResult = [mutableResult copy];
-	
-	return immutableResult;
+	return [mutableResult copy];
 }
 
 
@@ -107,16 +114,12 @@
 - (NSString *)pcl_URLEncodedString
 {
     if (self == nil)
-		return nil;
-	CFStringRef preprocessedString = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault, 
-																							 (CFStringRef) self, 
-																							 CFSTR(""), 
-																							 kCFStringEncodingUTF8);
-    CFStringRef resultRef = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                           preprocessedString,
-                                                                           NULL,
-																		   CFSTR("!*'();:@&=+$,/?%#[]"),
-                                                                           kCFStringEncodingUTF8);							   
+    {
+        return nil;
+    }
+		
+	CFStringRef preprocessedString = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault, (CFStringRef) self, CFSTR(""), kCFStringEncodingUTF8);
+    CFStringRef resultRef = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, preprocessedString, NULL, CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8);
 	NSString * result = (__bridge NSString*)resultRef;
 																
 	CFRelease(resultRef);
@@ -126,10 +129,7 @@
 
 - (NSString *)pcl_URLDecodedString
 {
-	CFStringRef resultRef = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
-																						   (CFStringRef)self,
-																						   CFSTR(""),
-																						   kCFStringEncodingUTF8);
+	CFStringRef resultRef = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault, (CFStringRef)self, CFSTR(""), kCFStringEncodingUTF8);
 	NSString * result = (__bridge NSString*)resultRef;
 	CFRelease(resultRef);
 	return result;
@@ -171,23 +171,21 @@
 
 - (NSString*)pcl_trim
 {
-    return [self stringByTrimmingCharactersInSet:
-            [NSCharacterSet 
-             whitespaceAndNewlineCharacterSet]];
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (NSString*)pcl_truncatedToWidth:(CGFloat)aWidth withFont:(UIFont*)aFont
+- (NSString*)pcl_truncatedToWidth:(CGFloat)width attributes:(NSDictionary*)attributes
 {
     NSMutableString * result  = [self mutableCopy];
     NSString * const ellipsis = @"...";
     
-    if( [self sizeWithFont:aFont].width > aWidth )
+    if( [self sizeWithAttributes:attributes].width > width )
     {
-        aWidth -= [ellipsis sizeWithFont:aFont].width;
+        width -= [ellipsis sizeWithAttributes:attributes].width;
         
         NSRange resultRange = {[result length] - 1, 1};
         
-        while ( [result sizeWithFont:aFont].width > aWidth ) 
+        while ( [result sizeWithAttributes:attributes].width > width )
         {
             [result deleteCharactersInRange:resultRange];
             resultRange.location--;
@@ -201,14 +199,15 @@
 
 // MARK: Length Related
 
-- (BOOL)pcl_isEmpty {
-
-    return [[self pcl_trim] length] == 0;
-}
-
-- (BOOL)pcl_isNotEmpty {
-
-	return ![self pcl_isEmpty];
++ (BOOL)pcl_isStringEmpty:(NSString *)string
+{
+    // string is nil or empty
+    if ( !string || string.length == 0 )
+    {
+        return YES;
+    }
+    
+    return NO;
 }
 
 
@@ -218,17 +217,11 @@
 {
     NSString * result = nil;    
     NSError * anError = nil;
-    NSURL * const documentsDirectroryUrl = [[NSFileManager defaultManager]
-                                                          URLForDirectory:NSDocumentDirectory
-                                                                 inDomain:NSUserDomainMask
-                                                        appropriateForURL:NULL
-                                                                   create:YES 
-                                                                    error:&anError];
+    NSURL * const documentsDirectroryUrl = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:NULL create:YES error:&anError];
     
     if( !anError && documentsDirectroryUrl )
     {
-        result = [[documentsDirectroryUrl absoluteString] 
-                  stringByAppendingPathComponent:self];
+        result = [[documentsDirectroryUrl absoluteString] stringByAppendingPathComponent:self];
     }    
     
     return result;
@@ -238,17 +231,11 @@
 {
     NSString * result = nil;    
     NSError * anError = nil;
-    NSURL * const temporaryDirectroryUrl = [[NSFileManager defaultManager]
-                                            URLForDirectory:NSItemReplacementDirectory
-                                            inDomain:NSUserDomainMask
-                                            appropriateForURL:NULL
-                                            create:YES
-                                            error:&anError];
+    NSURL * const temporaryDirectroryUrl = [[NSFileManager defaultManager] URLForDirectory:NSItemReplacementDirectory inDomain:NSUserDomainMask appropriateForURL:NULL create:YES error:&anError];
     
     if( !anError && temporaryDirectroryUrl )
     {
-        result = [[temporaryDirectroryUrl absoluteString] 
-                  stringByAppendingPathComponent:self];
+        result = [[temporaryDirectroryUrl absoluteString] stringByAppendingPathComponent:self];
     }    
     
     return result;    
@@ -261,23 +248,21 @@
 {
 	NSError * error = nil;
 	
-	NSRegularExpression * regex = [NSRegularExpression 
-			regularExpressionWithPattern:regexPattern
-			options:NSRegularExpressionCaseInsensitive
-			error:&error];
+	NSRegularExpression * regex = [NSRegularExpression regularExpressionWithPattern:regexPattern options:NSRegularExpressionCaseInsensitive error:&error];
 			
 	// --- regex creation generated error
-	if( error ) {
+	if( error )
+    {
 		return NO;
 	}
 	
 	NSRange expectedRangeOfMatch = NSMakeRange(0, [self length]);
 	NSRange actualRangeOfMatch = [regex rangeOfFirstMatchInString:self options:0 range:expectedRangeOfMatch];
-	BOOL regexMatched = [NSStringFromRange(expectedRangeOfMatch) 
-			isEqualToString:NSStringFromRange(actualRangeOfMatch)];
+	BOOL regexMatched = [NSStringFromRange(expectedRangeOfMatch) isEqualToString:NSStringFromRange(actualRangeOfMatch)];
 	
 	// --- regex didn't match
-	if( !regexMatched ) {
+	if( !regexMatched )
+    {
 		return NO;
 	}
 	
@@ -297,14 +282,15 @@
 
 	BOOL result = [self pcl_matchesRegularExpression:emailRegex];
 
-	if( result ) {
+	if( result )
+    {
 		// --- check for multiple dots
 		NSString * const multipleDotsRegex = @"^.*[.]{2,}.*$";
 		result = ![self pcl_matchesRegularExpression:multipleDotsRegex];
 	}
 
-    if (result) {
-
+    if (result)
+    {
         // --- check for @@
         NSString * twoAt = @"@@";
         NSRange range = [self rangeOfString:twoAt];
@@ -322,7 +308,7 @@
 								   allowLossyConversion:NO];
 	// Create a SHA512 digest and store it in digest
 	uint8_t digest[CC_SHA512_DIGEST_LENGTH] = {0};
-	CC_SHA512(stringData.bytes, stringData.length, digest);
+	CC_SHA512(stringData.bytes, (CC_LONG)stringData.length, digest);
 
 	// Now convert to NSData structure to make it usable again
     NSData * const hashedData = [NSData dataWithBytes:digest length:CC_SHA512_DIGEST_LENGTH];
@@ -342,27 +328,27 @@
 	NSString * result = @"";
 
 	// > 1 TB
-	if ( bytes > 0x10000000000 ) {
-
+	if ( bytes > 0x10000000000 )
+    {
 		result = [NSString stringWithFormat:@"%.2f TB", bytes / (double)0x10000000000];
 	}
 	// > 1 GB
-	else if( bytes > 0x40000000 ) {
-
+	else if( bytes > 0x40000000 )
+    {
 		result = [NSString stringWithFormat:@"%.2f GB", bytes / (double)0x40000000];
 	}
 	// > 1 MB
-	else if( bytes > 0x100000 ) {
-
+	else if( bytes > 0x100000 )
+    {
 		result = [NSString stringWithFormat:@"%.2f MB", bytes / (double)0x100000];
 	}
 	// > 1 kB
-	else if( bytes > 0x400 ) {
-
+	else if( bytes > 0x400 )
+    {
 		result = [NSString stringWithFormat:@"%lld kB", bytes / 0x400];
 	}
-	else {
-
+	else
+    {
 		result = [NSString stringWithFormat:@"%lld Byte", bytes];
 	}
 	return result;
@@ -372,18 +358,25 @@
 {
 	NSString * result = nil;
 
-	if( timeInSeconds > 0 ) {
-		NSInteger timeIntervalAsInteger = (NSInteger)timeInSeconds;
-		NSInteger hours 				= timeIntervalAsInteger / 3600;
-		NSInteger minutes 				= (timeIntervalAsInteger - (hours*3600)) / 60;
-		NSInteger minutesWithHours 		= timeIntervalAsInteger / 60;
-		NSInteger seconds 				= timeIntervalAsInteger % 60;
+	if( timeInSeconds > 0 )
+    {
+		unsigned long timeIntervalAsInteger = (unsigned long)timeInSeconds;
+		unsigned long hours 				= timeIntervalAsInteger / 3600;
+		unsigned long minutes 				= (timeIntervalAsInteger - (hours*3600)) / 60;
+		unsigned long minutesWithHours 		= timeIntervalAsInteger / 60;
+		unsigned long seconds 				= timeIntervalAsInteger % 60;
 
-		result = ( includeHoursInMinutes && ( minutesWithHours < 60 ) )
-		? [NSString stringWithFormat:@"%02d:%02d", minutesWithHours, seconds]
-		: [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+        if ( includeHoursInMinutes && ( minutesWithHours < 60 ) )
+        {
+            result = [NSString stringWithFormat:@"%02lu:%02lu", minutesWithHours, seconds];
+        }
+        else
+        {
+            result = [NSString stringWithFormat:@"%02lu:%02lu:%02lu", hours, minutes, seconds];
+        }
 	}
-	else {
+	else
+    {
 		result = includeHoursInMinutes ? @"00:00" : @"00:00:00";
 	}
 
@@ -396,19 +389,13 @@
 + (NSString*)pcl_userAgentString
 {
 	NSString *result = [NSString stringWithFormat:@"%@/%@/iOS/%@/%@",
-						[[UIApplication pcl_applicationName]
-						 stringByReplacingOccurrencesOfString:@" "
-						 withString:@"_"],
-						[[UIApplication pcl_appVersion]
-						 stringByReplacingOccurrencesOfString:@" "
-						 withString:@"_"],
-						[[[UIDevice currentDevice] systemVersion]
-						 stringByReplacingOccurrencesOfString:@" "
-						 withString:@"_"],
-						[[[UIDevice currentDevice] pcl_machine]
-						 stringByReplacingOccurrencesOfString:@" "
-						 withString:@"_"]];
+						[[UIApplication pcl_applicationName] stringByReplacingOccurrencesOfString:@" " withString:@"_"],
+						[[UIApplication pcl_appVersion] stringByReplacingOccurrencesOfString:@" "  withString:@"_"],
+						[[[UIDevice currentDevice] systemVersion] stringByReplacingOccurrencesOfString:@" " withString:@"_"],
+						[[[UIDevice currentDevice] pcl_machine] stringByReplacingOccurrencesOfString:@" " withString:@"_"]];
 
 	return result;
 }
+
+
 @end

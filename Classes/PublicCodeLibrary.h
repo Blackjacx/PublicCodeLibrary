@@ -1,13 +1,12 @@
-/*!
- @file		PublicCodeLibrary.h
- @brief		The global header containing all sub headers.
- @details	This header file can be imported in the PCH of projects that make
- use of this library with the effect to have all the useful stuff
- at hand ... everywhere.
- @author	Stefan Herold
- @date		2011-10-24
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
- */
+//
+//  PublicCodeLibrary.h
+//  PublicCodeLibrary
+//
+//  Created by Stefan Herold on 30/07/15.
+//  Copyright (c) 2015 Stefan Herold. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
 
 // MARK: Core
 #import "PCLDebugging.h"
