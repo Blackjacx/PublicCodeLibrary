@@ -22,6 +22,12 @@
 		B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42B16795D140004221B /* UIImage+PCLExtensions.m */; };
 		B917BDBF17463213004560BE /* UIView+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42D16795D140004221B /* UIView+PCLExtensions.m */; };
 		B917BDC017463213004560BE /* UIViewConroller+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */; };
+		B95FFC631BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */; settings = {ASSET_TAGS = (); }; };
+		B95FFC641BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
+		B95FFC651BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC611BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h */; settings = {ASSET_TAGS = (); }; };
+		B95FFC661BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC621BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
+		B95FFC691BBC6F09008B907F /* PCLTransitionAnimatorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC671BBC6F09008B907F /* PCLTransitionAnimatorConstants.h */; settings = {ASSET_TAGS = (); }; };
+		B95FFC6A1BBC6F09008B907F /* PCLTransitionAnimatorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC681BBC6F09008B907F /* PCLTransitionAnimatorConstants.m */; settings = {ASSET_TAGS = (); }; };
 		B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E92FF174535040046690A /* PCLBackgroundTaskHandler.m */; };
 		B96E9326174535C10046690A /* PCLRestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E9325174535C10046690A /* PCLRestCommand.m */; };
 		B9B018B71B698684009A58D4 /* NSStringExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B018B61B698684009A58D4 /* NSStringExtensionTests.m */; };
@@ -86,6 +92,13 @@
 		B927BDE2167A2665007EB59E /* NSURLRequest+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BDE3167A2665007EB59E /* NSURLRequest+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+PCLExtensions.m"; sourceTree = "<group>"; };
 		B9387AF916796A9C000CB216 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCCrossFadeTransitionAnimator.h; sourceTree = "<group>"; };
+		B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCCrossFadeTransitionAnimator.m; sourceTree = "<group>"; };
+		B95FFC611BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCHorizontalSlideTransitionAnimator.h; sourceTree = "<group>"; };
+		B95FFC621BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCHorizontalSlideTransitionAnimator.m; sourceTree = "<group>"; };
+		B95FFC671BBC6F09008B907F /* PCLTransitionAnimatorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLTransitionAnimatorConstants.h; sourceTree = "<group>"; };
+		B95FFC681BBC6F09008B907F /* PCLTransitionAnimatorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLTransitionAnimatorConstants.m; sourceTree = "<group>"; };
+		B95FFC6B1BBC71BA008B907F /* PCLTransitionAnimatorDocumentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCLTransitionAnimatorDocumentation.h; sourceTree = "<group>"; };
 		B962F41716795D140004221B /* NSArray+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F41816795D140004221B /* NSArray+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F41916795D140004221B /* NSError+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PCLExtensions.h"; sourceTree = "<group>"; };
@@ -151,6 +164,20 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		B95FFC5E1BBC6E44008B907F /* View Controller Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B95FFC6B1BBC71BA008B907F /* PCLTransitionAnimatorDocumentation.h */,
+				B95FFC671BBC6F09008B907F /* PCLTransitionAnimatorConstants.h */,
+				B95FFC681BBC6F09008B907F /* PCLTransitionAnimatorConstants.m */,
+				B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */,
+				B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */,
+				B95FFC611BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h */,
+				B95FFC621BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m */,
+			);
+			name = "View Controller Transitions";
+			sourceTree = "<group>";
+		};
 		B962F3F116795C800004221B = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +233,7 @@
 		B962F44A16795EC60004221B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B95FFC5E1BBC6E44008B907F /* View Controller Transitions */,
 				B9C1132616820D0700DCA97A /* Categories */,
 			);
 			name = UI;
@@ -309,6 +337,8 @@
 				B9B019911B6A390D009A58D4 /* NSArray+PCLExtensions.h in Headers */,
 				B9B019921B6A390D009A58D4 /* NSData+PCLExtensions.h in Headers */,
 				B9B019931B6A390D009A58D4 /* NSDate+PCLExtensions.h in Headers */,
+				B95FFC691BBC6F09008B907F /* PCLTransitionAnimatorConstants.h in Headers */,
+				B95FFC631BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h in Headers */,
 				B9B019941B6A390D009A58D4 /* NSError+PCLExtensions.h in Headers */,
 				B9B019951B6A390D009A58D4 /* NSNotificationCenter+PCLExtensions.h in Headers */,
 				B9B019961B6A390D009A58D4 /* NSObject+PCLExtensions.h in Headers */,
@@ -321,6 +351,7 @@
 				B9B0199C1B6A390D009A58D4 /* UIDevice+PCLExtensions.h in Headers */,
 				B9B0199D1B6A390D009A58D4 /* UIImage+PCLExtensions.h in Headers */,
 				B9B0199E1B6A390D009A58D4 /* UIView+PCLExtensions.h in Headers */,
+				B95FFC651BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h in Headers */,
 				B9B0199F1B6A390D009A58D4 /* UIViewConroller+PCLExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +449,13 @@
 				B917BDAE174631EE004560BE /* NSData+PCLExtensions.m in Sources */,
 				B917BDAF174631EE004560BE /* NSDate+PCLExtensions.m in Sources */,
 				B917BDB0174631EE004560BE /* NSError+PCLExtensions.m in Sources */,
+				B95FFC6A1BBC6F09008B907F /* PCLTransitionAnimatorConstants.m in Sources */,
 				B917BDB1174631EE004560BE /* NSNotificationCenter+PCLExtensions.m in Sources */,
+				B95FFC661BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m in Sources */,
 				B917BDB2174631EE004560BE /* NSObject+PCLExtensions.m in Sources */,
 				B917BDB3174631EE004560BE /* NSString+PCLExtensions.m in Sources */,
 				B917BDB4174631EE004560BE /* NSURL+PCLExtensions.m in Sources */,
+				B95FFC641BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m in Sources */,
 				B917BDB5174631EE004560BE /* NSURLRequest+PCLExtensions.m in Sources */,
 				B917BDBB17463213004560BE /* UIApplication+PCLExtensions.m in Sources */,
 				B917BDBC17463213004560BE /* UIColor+PCLExtensions.m in Sources */,
@@ -648,6 +682,7 @@
 				B9B018BC1B698684009A58D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
