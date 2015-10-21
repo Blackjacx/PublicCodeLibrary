@@ -128,11 +128,11 @@
 		B96E93231745356C0046690A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		B96E9324174535C10046690A /* PCLRestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLRestCommand.h; sourceTree = "<group>"; };
 		B96E9325174535C10046690A /* PCLRestCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLRestCommand.m; sourceTree = "<group>"; };
-		B99FEB4718C72F7A005D3F1B /* PublicCodeLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicCodeLibrary.podspec; sourceTree = "<group>"; };
 		B9B018B21B698684009A58D4 /* PublicCodeLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicCodeLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B018B51B698684009A58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9B018B61B698684009A58D4 /* NSStringExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensionTests.m; sourceTree = "<group>"; };
 		B9B019081B6A31AC009A58D4 /* PublicCodeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
+		B9C3219A1BD840F10070E419 /* PublicCodeLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicCodeLibrary.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,7 +255,7 @@
 		B99FEB4618C72F6D005D3F1B /* Podspec */ = {
 			isa = PBXGroup;
 			children = (
-				B99FEB4718C72F7A005D3F1B /* PublicCodeLibrary.podspec */,
+				B9C3219A1BD840F10070E419 /* PublicCodeLibrary.podspec */,
 			);
 			name = Podspec;
 			path = Classes;
