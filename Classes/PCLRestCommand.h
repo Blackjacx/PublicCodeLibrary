@@ -3,11 +3,11 @@
 //  OperationExample
 //
 //  Created by Stefan Herold on 9/12/11.
-//  Copyright (c) 2012 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 
-// MARK: Delegate Protocol Declaration
+#pragma mark - Delegate Protocol Declaration
 
 @protocol PCLRestCommandDelegate;
 
@@ -32,7 +32,7 @@
 @end
 
 
-// MARK: Delegate Protocol Definition
+#pragma mark - Delegate Protocol Definition
 
 @protocol PCLRestCommandDelegate <NSObject>
 

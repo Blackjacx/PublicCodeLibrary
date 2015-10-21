@@ -3,14 +3,14 @@
  @brief		Extensions for the class NSNotificationCenter
  @author	Stefan Herold
  @date		2012-12-16
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import "NSNotificationCenter+PCLExtensions.h"
 
 @implementation NSNotificationCenter (PCLExtensions)
 
-// MARK: Post Notifications on the Main Thread
+#pragma mark - Post Notifications on the Main Thread
 
 + (void)postNotificationOnMainThread:(NSNotification*)notification postingStyle:(NSPostingStyle)postingStyle; {
 

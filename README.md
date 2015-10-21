@@ -22,6 +22,13 @@ documented code (e.g categories, wrapper classes, ...). Personally I use it as a
 
 ## Changelog
 
+### 1.0.1
+
+- fixed warnings
+- implemented method to find instances of a given class in a view hierarchy
+- updated to more safe version of empty string detection that also finds empty strings
+- updated project settings
+
 ### 1.0.0
 
 - modified base64 methods to use the newly introduced ones in iOS7 (compatible with iOS4 and above) -> Is much shorter now!

@@ -3,7 +3,7 @@
  @brief		Easy management of background tasks
  @author	Stefan Herold
  @date		2011-10-24
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import "PCLBackgroundTaskHandler.h"
@@ -19,7 +19,7 @@
 
 @implementation PCLBackgroundTaskHandler
 
-// MARK: Singleton pattern
+#pragma mark - Singleton pattern
 
 + (PCLBackgroundTaskHandler *)sharedInstance {
     static dispatch_once_t predicate;
@@ -49,7 +49,7 @@
 	return self;
 }
 
-// MARK: Handling Background Tasks
+#pragma mark - Handling Background Tasks
 
 - (void)registerObjectForBackgroundExecution:(id)anObject
 {

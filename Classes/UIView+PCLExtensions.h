@@ -3,22 +3,27 @@
 //  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 @interface UIView (PCLExtensions)
 
-// MARK: 
-// MARK: Animations
+
+#pragma mark - Animations
 
 - (void)pcl_jump;
 
-// MARK: 
-// MARK: Style
+
+#pragma mark - Style
 
 - (void)pcl_enableRoundRect;
 - (void)pcl_enableRoundRectWithRadius:(CGFloat)aRadius;
 - (void)pcl_enableRoundRectWithRadius:(CGFloat)aRadius borderWidth:(CGFloat)aWidth borderColor:(UIColor*)aColor;
+
+
+#pragma mark - Finding Views
+
+- (void)pcl_recursivelyFindSubviewsOfClass:(Class)aClass storeInArray:(NSMutableArray*)array;
 
 @end
 

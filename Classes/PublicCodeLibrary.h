@@ -3,17 +3,17 @@
 //  PublicCodeLibrary
 //
 //  Created by Stefan Herold on 30/07/15.
-//  Copyright (c) 2015 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-// MARK: Core
+#pragma mark - Core
 #import "PCLDebugging.h"
 #import "PCLStrings.h"
 #import "PCLTypeDefs.h"
 
-// MARK: Foundation Additions
+#pragma mark - Foundation Additions
 #import "NSArray+PCLExtensions.h"
 #import "NSData+PCLExtensions.h"
 #import "NSDate+PCLExtensions.h"
@@ -25,7 +25,7 @@
 #import "NSURLRequest+PCLExtensions.h"
 #import "PCLBackgroundTaskHandler.h"
 
-// MARK: UIKit Extensions
+#pragma mark - UIKit Extensions
 #import "UIApplication+PCLExtensions.h"
 #import "UIColor+PCLExtensions.h"
 #import "UIDevice+PCLExtensions.h"
@@ -33,5 +33,5 @@
 #import "UIView+PCLExtensions.h"
 #import "UIViewConroller+PCLExtensions.h"
 
-// MARK: Backend
+#pragma mark - Backend
 #import "PCLRestCommand.h"

@@ -3,7 +3,7 @@
  @brief		Macro Definitions to support debugging (compiled out in release builds)
  @author	Stefan Herold
  @date		2012-12-16
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 typedef void(^PCLDebugBlock)(void);

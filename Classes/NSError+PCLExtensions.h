@@ -3,7 +3,7 @@
 //  PublicCodeLibrary
 //
 //  Created by Stefan Herold on 10/24/11.
-//  Copyright (c) 2011 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 typedef NS_ENUM(NSUInteger, PCLErrorCode) {

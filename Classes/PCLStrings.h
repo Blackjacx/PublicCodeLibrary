@@ -3,10 +3,10 @@
  @brief		Macros for declaring/defining strings
  @author	Stefan Herold
  @date		2011-10-24
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
-// MARK: Declaring and Defining Strings
+#pragma mark - Declaring and Defining Strings
 /*!
 	\name Declaring and Defining Strings
 	@{
@@ -16,7 +16,7 @@
 //!@}
 
 
-// MARK: Declaring and Defining Keys
+#pragma mark - Declaring and Defining Keys
 /*!
 	\name Declaring and Defining Keys
 	@{

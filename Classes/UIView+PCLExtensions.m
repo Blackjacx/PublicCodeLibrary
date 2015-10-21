@@ -3,7 +3,7 @@
 //  PublicCodeLibrary
 //
 //  Created by noskill on 23.05.11.
-//  Copyright (c) 2012 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 #import "UIView+PCLExtensions.h"
@@ -11,8 +11,7 @@
 
 @implementation UIView (PCLExtensions)
 
-// MARK: 
-// MARK: Animations
+#pragma mark - Animations
 
 - (void)pcl_jump
 {
@@ -38,8 +37,7 @@
                      }];
 }
 
-// MARK: 
-// MARK: Style
+#pragma mark - Style
 
 - (void)pcl_enableRoundRect
 {
@@ -58,5 +56,18 @@
     self.layer.borderWidth = aWidth;
     self.layer.borderColor = aColor.CGColor;
 }
+
+
+#pragma mark - Finding Views 
+
+- (void)pcl_recursivelyFindSubviewsOfClass:(Class)aClass storeInArray:(NSMutableArray*)array {
+    for (UIView *subview in self.subviews) {
+        if ([subview isKindOfClass:aClass]) {
+            [array addObject:subview];
+        }
+        [subview pcl_recursivelyFindSubviewsOfClass:aClass storeInArray:array];
+    }
+}
+
 
 @end

@@ -3,7 +3,7 @@
 //  PublicCodeLibrary
 //
 //  Created by Stefan Herold on 10/24/11.
-//  Copyright (c) 2011 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 #import "NSError+PCLExtensions.h"
@@ -16,8 +16,7 @@ PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForRecoveryS
 
 @implementation NSError (PCLExtensions)
 
-// MARK: 
-// MARK: Getting Localized Strings
+#pragma mark - Getting Localized Strings
 
 + (NSString *)localizedStringForDomain:(NSString *)domain 
 		code:(NSInteger)code 
@@ -75,8 +74,7 @@ PCL_DEFINE_STRING(NSErrorExtensionLocalizedStringReturnValueModifierForRecoveryS
 	return result;
 }
 
-// MARK: 
-// MARK: Initialization
+#pragma mark - Initialization
 
 - (id)initWithDomain:(NSString *)domain code:(NSInteger)code
 {

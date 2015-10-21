@@ -3,7 +3,7 @@
  @brief		This class is responsible for testing the NSString class extension.
  @author	Stefan Herold
  @date		2015-07-30
- @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import <UIKit/UIKit.h>

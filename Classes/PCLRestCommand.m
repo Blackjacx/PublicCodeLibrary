@@ -3,7 +3,7 @@
 //  OperationExample
 //
 //  Created by Stefan Herold on 9/12/11.
-//  Copyright (c) 2012 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 #import "PCLRestCommand.h"
@@ -37,8 +37,7 @@ static NSOperationQueue * backgroundQueue;
 
 @implementation PCLRestCommand
 
-// MARK:
-// MARK: Initialization & Deallocation & Reset
+#pragma mark - Initialization & Deallocation & Reset
 
 + (void)initialize {
 	if(!backgroundQueue) {
@@ -84,8 +83,7 @@ static NSOperationQueue * backgroundQueue;
 			  forKeyPath:PCLRestCommandOperationIsFinishedKeyPath];
 }
 
-// MARK:
-// MARK: Request Creation
+#pragma mark - Request Creation
 
 - (NSURLRequest*)URLRequest {
 	
@@ -136,8 +134,7 @@ static NSOperationQueue * backgroundQueue;
 	return _userAgent;
 }
 
-// MARK:
-// MARK: Execution
+#pragma mark - Execution
 
 - (void)executeInBackground {
 	[backgroundQueue addOperation:self];
@@ -194,8 +191,7 @@ static NSOperationQueue * backgroundQueue;
 	}
 }
 
-// MARK:
-// MARK: NSURLConnection - Delegate (Connection Data and Responses)
+#pragma mark - NSURLConnection - Delegate (Connection Data and Responses)
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
@@ -218,8 +214,7 @@ static NSOperationQueue * backgroundQueue;
 	[_receivedData appendData:data];
 }
 
-// MARK:
-// MARK: NSURLConnection - Delegate (Connection Completion)
+#pragma mark - NSURLConnection - Delegate (Connection Completion)
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	NSInteger statusCode = _URLResponse.statusCode;
@@ -242,8 +237,7 @@ static NSOperationQueue * backgroundQueue;
 	_connectionFinished = YES;
 }
 
-// MARK:
-// MARK: Finish Command
+#pragma mark - Finish Command
 
 - (void)finish
 {
@@ -285,8 +279,7 @@ static NSOperationQueue * backgroundQueue;
 				   });
 }
 
-// MARK:
-// MARK: Finish Command - Observe Completion via KVO
+#pragma mark - Finish Command - Observe Completion via KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
 					  ofObject:(id)object
@@ -298,8 +291,7 @@ static NSOperationQueue * backgroundQueue;
 	}
 }
 
-// MARK: 
-// MARK:  Getting the Result
+#pragma mark -  Getting the Result
 
 - (NSData*)result {
 	if( _connectionFinished && self.isFinished && !self.isCancelled ) {

@@ -402,7 +402,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PCL;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stefan Herold";
 				TargetAttributes = {
 					B9B018B11B698684009A58D4 = {
@@ -504,6 +504,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -550,6 +551,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PublicCodeLibrary;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -569,6 +571,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PublicCodeLibrary;
 				SKIP_INSTALL = YES;
 			};
@@ -611,6 +614,7 @@
 					XCTest,
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -650,6 +654,7 @@
 					XCTest,
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

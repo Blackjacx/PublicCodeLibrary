@@ -3,7 +3,7 @@
  @brief		Extensions for the class NSString
  @author	Stefan Herold
  @date		2015-07-29
- @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import "NSString+PCLExtensions.h"
@@ -15,7 +15,7 @@
 @implementation NSString (PCLExtensions)
 
 
-// MARK: Lorem Ipsum Generation
+#pragma mark - Lorem Ipsum Generation
 
 + (NSString*)pcl_loremIpsumWithValue:(NSUInteger)aLengthOrCount type:(NSStringLoremIpsumType)aType
 {
@@ -96,7 +96,7 @@
 }
 
 
-// MARK: Repeating Strings
+#pragma mark - Repeating Strings
 
 - (NSString*)pcl_repeat:(NSUInteger)times {
 	NSMutableString * mutableResult = [self mutableCopy];
@@ -109,7 +109,7 @@
 }
 
 
-// MARK: URL Encoding
+#pragma mark - URL Encoding
 
 - (NSString *)pcl_URLEncodedString
 {
@@ -136,7 +136,7 @@
 }
 
 
-// MARK: UDID Generation
+#pragma mark - UDID Generation
 
 + (NSString*)pcl_uniqueID
 {
@@ -149,7 +149,7 @@
 }
 
 
-// MARK: Comparison
+#pragma mark - Comparison
 
 - (BOOL)pcl_isNotEqualToString:(NSString*)aString
 {
@@ -167,7 +167,7 @@
 }
 
 
-// MARK: Truncation
+#pragma mark - Truncation
 
 - (NSString*)pcl_trim
 {
@@ -197,7 +197,7 @@
 }
 
 
-// MARK: Length Related
+#pragma mark - Length Related
 
 + (BOOL)pcl_isStringEmpty:(NSString *)string
 {
@@ -211,7 +211,7 @@
 }
 
 
-// MARK: File Paths
+#pragma mark - File Paths
 
 - (NSString*)pcl_concatWithDocumentsDirectoryPath
 {
@@ -242,7 +242,7 @@
 }
 
 
-// MARK: Regular Expression Checking / Validation
+#pragma mark - Regular Expression Checking / Validation
 
 - (BOOL)pcl_matchesRegularExpression:(NSString*)regexPattern
 {
@@ -300,7 +300,7 @@
 }
 
 
-// MARK: SHA512 Hash Generation
+#pragma mark - SHA512 Hash Generation
 
 - (NSString*)pcl_sha512HashFromUTF8String
 {
@@ -321,7 +321,7 @@
 }
 
 
-// MARK: Formatting
+#pragma mark - Formatting
 
 + (NSString *)pcl_stringByConvertingBytesToHumanReadableFormat:(PCLFileSize)bytes {
 
@@ -384,7 +384,7 @@
 }
 
 
-// MARK: User Agent Generation
+#pragma mark - User Agent Generation
 
 + (NSString*)pcl_userAgentString
 {

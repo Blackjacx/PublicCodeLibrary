@@ -3,7 +3,7 @@
  @brief		Extensions for the class NSString
  @author	Stefan Herold
  @date		2015-07-29
- @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import "PCLTypeDefs.h"
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 @interface NSString (PCLExtensions)
 
 
-// MARK: Lorem Ipsum Generation
+#pragma mark - Lorem Ipsum Generation
 /*!
  @name Lorem Ipsum Generation
  @{
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Repeating Strings
+#pragma mark - Repeating Strings
 /*!
  @name Repeating Strings
  @{
@@ -44,7 +44,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: URL Encoding
+#pragma mark - URL Encoding
 /*!
  @name URL Encoding
  @{
@@ -54,7 +54,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: UDID Generation
+#pragma mark - UDID Generation
 /*!
  @name UDID Generation
  @{
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Comparison
+#pragma mark - Comparison
 /*!
  @name Comparison
  @{
@@ -74,7 +74,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Truncation
+#pragma mark - Truncation
 
 /**
  Removes whitespaces and newline characters from the beginning and the end of the receiver.
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 - (NSString*)pcl_truncatedToWidth:(CGFloat)width attributes:(NSDictionary*)attributes;
 
 
-// MARK: Length Related
+#pragma mark - Length Related
 /*!
  @name Length Related
  @{
@@ -100,7 +100,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: File Paths
+#pragma mark - File Paths
 /*!
  @name File Paths
  @{
@@ -110,7 +110,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Regular Expression Checking / Validation
+#pragma mark - Regular Expression Checking / Validation
 /*!
  @name Regular Expression Checking / Validation
  @{
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Hash Generation
+#pragma mark - Hash Generation
 /*!
  @name Hash Generation
  @{
@@ -129,7 +129,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: Formatting
+#pragma mark - Formatting
 /*!
  @name Formatting
  @{
@@ -139,7 +139,7 @@ typedef NS_ENUM(NSUInteger, NSStringLoremIpsumType) {
 //!@}
 
 
-// MARK: User Agent Generation
+#pragma mark - User Agent Generation
 /*!
  @name User Agent Generation
  @{

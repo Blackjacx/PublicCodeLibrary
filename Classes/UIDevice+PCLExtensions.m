@@ -3,7 +3,7 @@
  @brief		Extensions for the class UIDevice
  @author	Stefan Herold
  @date		2015-07-29
- @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #include <sys/types.h>

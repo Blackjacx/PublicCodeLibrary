@@ -3,14 +3,14 @@
 //  PublicCodeLibrary
 //
 //  Created by Stefan Herold on 13.12.2012.
-//  Copyright 2012 Stefan Herold. All rights reserved.
+//  Copyright © 2015 Stefan Herold. All rights reserved.
 //
 
 #import "UIViewConroller+PCLExtensions.h"
 
 @implementation UIViewController (PCLExtensions)
 
-// MARK: Enabling and Disabling Controls
+#pragma mark - Enabling and Disabling Controls
 
 - (void)pcl_setControlsEnabled:(BOOL)shouldEnable {
 	

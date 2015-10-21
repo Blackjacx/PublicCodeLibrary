@@ -3,7 +3,7 @@
  @brief		Extensions for the class NSData
  @author	Stefan Herold
  @date		2015-07-29
- @copyright	Copyright (c) 2015 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 #import "NSData+PCLExtensions.h"
@@ -13,7 +13,7 @@
 @implementation NSData (PCLExtensions)
 
 
-// MARK: Encoding and Decoding Base64
+#pragma mark - Encoding and Decoding Base64
 
 - (NSString *)pcl_encodedBase64String
 {

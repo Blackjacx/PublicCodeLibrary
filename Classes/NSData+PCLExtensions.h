@@ -3,12 +3,12 @@
  @brief		Extensions for the class NSData
  @author	Stefan Herold
  @date		2012-12-16
- @copyright	Copyright (c) 2012 Stefan Herold. All rights reserved.
+ @copyright	Copyright © 2015 Stefan Herold. All rights reserved.
  */
 
 @interface NSData (PCLExtensions)
 
-// MARK: Encoding and Decoding Base64
+#pragma mark - Encoding and Decoding Base64
 /*!
  @name Encoding and Decoding Base64
  @{
