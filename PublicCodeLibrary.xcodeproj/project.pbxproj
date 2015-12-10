@@ -22,12 +22,12 @@
 		B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42B16795D140004221B /* UIImage+PCLExtensions.m */; };
 		B917BDBF17463213004560BE /* UIView+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42D16795D140004221B /* UIView+PCLExtensions.m */; };
 		B917BDC017463213004560BE /* UIViewConroller+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */; };
-		B95FFC631BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */; settings = {ASSET_TAGS = (); }; };
-		B95FFC641BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
-		B95FFC651BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC611BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h */; settings = {ASSET_TAGS = (); }; };
-		B95FFC661BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC621BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
-		B95FFC691BBC6F09008B907F /* PCLTransitionAnimatorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC671BBC6F09008B907F /* PCLTransitionAnimatorConstants.h */; settings = {ASSET_TAGS = (); }; };
-		B95FFC6A1BBC6F09008B907F /* PCLTransitionAnimatorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC681BBC6F09008B907F /* PCLTransitionAnimatorConstants.m */; settings = {ASSET_TAGS = (); }; };
+		B95FFC631BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */; };
+		B95FFC641BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */; };
+		B95FFC651BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC611BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.h */; };
+		B95FFC661BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC621BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m */; };
+		B95FFC691BBC6F09008B907F /* PCLTransitionAnimatorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B95FFC671BBC6F09008B907F /* PCLTransitionAnimatorConstants.h */; };
+		B95FFC6A1BBC6F09008B907F /* PCLTransitionAnimatorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B95FFC681BBC6F09008B907F /* PCLTransitionAnimatorConstants.m */; };
 		B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E92FF174535040046690A /* PCLBackgroundTaskHandler.m */; };
 		B96E9326174535C10046690A /* PCLRestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E9325174535C10046690A /* PCLRestCommand.m */; };
 		B9B018B71B698684009A58D4 /* NSStringExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B018B61B698684009A58D4 /* NSStringExtensionTests.m */; };
@@ -91,6 +91,7 @@
 		B927BDD5167A2665007EB59E /* NSObject+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PCLExtensions.m"; sourceTree = "<group>"; };
 		B927BDE2167A2665007EB59E /* NSURLRequest+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BDE3167A2665007EB59E /* NSURLRequest+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+PCLExtensions.m"; sourceTree = "<group>"; };
+		B936533B1C1A447C00ECC555 /* PublicCodeLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicCodeLibrary.podspec; sourceTree = SOURCE_ROOT; };
 		B9387AF916796A9C000CB216 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		B95FFC5F1BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCCrossFadeTransitionAnimator.h; sourceTree = "<group>"; };
 		B95FFC601BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCCrossFadeTransitionAnimator.m; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		B9B018B51B698684009A58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9B018B61B698684009A58D4 /* NSStringExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensionTests.m; sourceTree = "<group>"; };
 		B9B019081B6A31AC009A58D4 /* PublicCodeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCodeLibrary.h; sourceTree = "<group>"; };
-		B9C3219A1BD840F10070E419 /* PublicCodeLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicCodeLibrary.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,6 @@
 			children = (
 				B962F40516795C810004221B /* PublicCodeLibrary */,
 				B993AC8C167E416C003FE068 /* Supporting Files */,
-				B99FEB4618C72F6D005D3F1B /* Podspec */,
 				B9B018B31B698684009A58D4 /* PublicCodeLibraryTests */,
 				B962F40116795C810004221B /* Products */,
 			);
@@ -242,6 +241,7 @@
 		B993AC8C167E416C003FE068 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B936533B1C1A447C00ECC555 /* PublicCodeLibrary.podspec */,
 				B96E93221745356C0046690A /* InfoPlist.strings */,
 				B96E93211745354E0046690A /* Info.plist */,
 				B96E9303174535050046690A /* PublicCodeLibrary-Prefix.pch */,
@@ -250,15 +250,6 @@
 			);
 			name = "Supporting Files";
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		B99FEB4618C72F6D005D3F1B /* Podspec */ = {
-			isa = PBXGroup;
-			children = (
-				B9C3219A1BD840F10070E419 /* PublicCodeLibrary.podspec */,
-			);
-			name = Podspec;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		B9B018B31B698684009A58D4 /* PublicCodeLibraryTests */ = {
