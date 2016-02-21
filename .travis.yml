@@ -13,4 +13,4 @@ script:
 
 - "xcodebuild -showsdks"
 
-- "xcodebuild -scheme PublicCodeLibrary -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -f `xcpretty-travis-formatter`"
+- "xcodebuild -scheme PublicCodeLibrary -destination 'platform=iOS Simulator,name=iPhone 4s' -destination 'platform=iOS Simulator,name=iPhone 5s' -destination 'platform=iOS Simulator,name=iPhone 6 Plus' test | xcpretty -f `xcpretty-travis-formatter`"
