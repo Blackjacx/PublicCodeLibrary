@@ -58,15 +58,20 @@
 }
 
 
-+ (void)pcl_attachDoneButtonToolbarTo:(id<UITextInput>)input target:(id)target action:(SEL)action {
++ (void)pcl_attachButtonToolbarTo:(id<UITextInput>)input title:(NSString*)title target:(id)target action:(SEL)action {
+    NSMutableArray *items = [NSMutableArray array];
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     [toolbar setBarStyle:UIBarStyleDefault];
     [toolbar sizeToFit];
     
     UIBarButtonItem *flexButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:target action:action];
+
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:target action:action];
     
-    toolbar.items = @[flexButton, doneButton];
+    [items addObject:flexButton];
+    [items addObject:btn];
+    
+    toolbar.items = items;
     
     if([input isKindOfClass:[UITextView class]]) {
         ((UITextView*) input).inputAccessoryView = toolbar;

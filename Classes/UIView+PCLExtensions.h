@@ -23,7 +23,7 @@
 
 #pragma mark - Keyboard Helper
 
-+ (void)pcl_attachDoneButtonToolbarTo:(id<UITextInput>)input target:(id)target action:(SEL)action;
++ (void)pcl_attachButtonToolbarTo:(id<UITextInput>)input title:(NSString*)title target:(id)target action:(SEL)action;
 
 
 
