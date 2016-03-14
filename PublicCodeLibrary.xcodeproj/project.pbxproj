@@ -118,6 +118,7 @@
 		B962F42B16795D140004221B /* UIImage+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F42C16795D140004221B /* UIView+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F42D16795D140004221B /* UIView+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PCLExtensions.m"; sourceTree = "<group>"; };
+		B966CE771C907CC70039EF47 /* PublicCodeLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicCodeLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
 		B96E92DB17452BDA0046690A /* libPublicCodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPublicCodeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96E92EB174534E30046690A /* PCLDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCLDebugging.h; path = Classes/PCLDebugging.h; sourceTree = SOURCE_ROOT; };
 		B96E92FE174535040046690A /* PCLBackgroundTaskHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCLBackgroundTaskHandler.h; path = Classes/PCLBackgroundTaskHandler.h; sourceTree = SOURCE_ROOT; };
@@ -309,6 +310,7 @@
 				B962F42D16795D140004221B /* UIView+PCLExtensions.m */,
 				B927BD96167A25AF007EB59E /* UIViewConroller+PCLExtensions.h */,
 				B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */,
+				B966CE771C907CC70039EF47 /* PublicCodeLibrary-Bridging-Header.h */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -393,6 +395,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PCL;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stefan Herold";
 				TargetAttributes = {
@@ -545,6 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PublicCodeLibrary;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PublicCodeLibrary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -565,6 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.blackjacx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PublicCodeLibrary;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PublicCodeLibrary-Bridging-Header.h";
 			};
 			name = Release;
 		};
