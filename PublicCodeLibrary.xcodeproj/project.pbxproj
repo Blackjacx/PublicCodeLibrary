@@ -8,15 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B917BDAD174631E1004560BE /* NSArray+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41816795D140004221B /* NSArray+PCLExtensions.m */; };
-		B917BDAE174631EE004560BE /* NSData+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDCB167A2665007EB59E /* NSData+PCLExtensions.m */; };
-		B917BDAF174631EE004560BE /* NSDate+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDCD167A2665007EB59E /* NSDate+PCLExtensions.m */; };
 		B917BDB0174631EE004560BE /* NSError+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41A16795D140004221B /* NSError+PCLExtensions.m */; };
 		B917BDB1174631EE004560BE /* NSNotificationCenter+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDD3167A2665007EB59E /* NSNotificationCenter+PCLExtensions.m */; };
-		B917BDB2174631EE004560BE /* NSObject+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDD5167A2665007EB59E /* NSObject+PCLExtensions.m */; };
-		B917BDB3174631EE004560BE /* NSString+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41C16795D140004221B /* NSString+PCLExtensions.m */; };
 		B917BDB4174631EE004560BE /* NSURL+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F41E16795D140004221B /* NSURL+PCLExtensions.m */; };
 		B917BDB5174631EE004560BE /* NSURLRequest+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B927BDE3167A2665007EB59E /* NSURLRequest+PCLExtensions.m */; };
-		B917BDBB17463213004560BE /* UIApplication+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42516795D140004221B /* UIApplication+PCLExtensions.m */; };
 		B917BDBC17463213004560BE /* UIColor+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42716795D140004221B /* UIColor+PCLExtensions.m */; };
 		B917BDBD17463213004560BE /* UIDevice+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42916795D140004221B /* UIDevice+PCLExtensions.m */; };
 		B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B962F42B16795D140004221B /* UIImage+PCLExtensions.m */; };
@@ -38,15 +33,10 @@
 		B9B0198E1B6A390D009A58D4 /* PCLTypeDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = B96E9302174535050046690A /* PCLTypeDefs.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019901B6A390D009A58D4 /* PCLBackgroundTaskHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B96E92FE174535040046690A /* PCLBackgroundTaskHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019911B6A390D009A58D4 /* NSArray+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41716795D140004221B /* NSArray+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9B019921B6A390D009A58D4 /* NSData+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B927BDCA167A2665007EB59E /* NSData+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9B019931B6A390D009A58D4 /* NSDate+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B927BDCC167A2665007EB59E /* NSDate+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019941B6A390D009A58D4 /* NSError+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41916795D140004221B /* NSError+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019951B6A390D009A58D4 /* NSNotificationCenter+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B927BDD2167A2665007EB59E /* NSNotificationCenter+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9B019961B6A390D009A58D4 /* NSObject+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B927BDD4167A2665007EB59E /* NSObject+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9B019971B6A390D009A58D4 /* NSString+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41B16795D140004221B /* NSString+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019981B6A390D009A58D4 /* NSURL+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F41D16795D140004221B /* NSURL+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B019991B6A390D009A58D4 /* NSURLRequest+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B927BDE2167A2665007EB59E /* NSURLRequest+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9B0199A1B6A390D009A58D4 /* UIApplication+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42416795D140004221B /* UIApplication+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B0199B1B6A390D009A58D4 /* UIColor+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42616795D140004221B /* UIColor+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B0199C1B6A390D009A58D4 /* UIDevice+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42816795D140004221B /* UIDevice+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9B0199D1B6A390D009A58D4 /* UIImage+PCLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B962F42A16795D140004221B /* UIImage+PCLExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -81,14 +71,8 @@
 		B9028C031745438200058071 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B927BD96167A25AF007EB59E /* UIViewConroller+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewConroller+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BD97167A25AF007EB59E /* UIViewConroller+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewConroller+PCLExtensions.m"; sourceTree = "<group>"; };
-		B927BDCA167A2665007EB59E /* NSData+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PCLExtensions.h"; sourceTree = "<group>"; };
-		B927BDCB167A2665007EB59E /* NSData+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PCLExtensions.m"; sourceTree = "<group>"; };
-		B927BDCC167A2665007EB59E /* NSDate+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PCLExtensions.h"; sourceTree = "<group>"; };
-		B927BDCD167A2665007EB59E /* NSDate+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PCLExtensions.m"; sourceTree = "<group>"; };
 		B927BDD2167A2665007EB59E /* NSNotificationCenter+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BDD3167A2665007EB59E /* NSNotificationCenter+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+PCLExtensions.m"; sourceTree = "<group>"; };
-		B927BDD4167A2665007EB59E /* NSObject+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PCLExtensions.h"; sourceTree = "<group>"; };
-		B927BDD5167A2665007EB59E /* NSObject+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PCLExtensions.m"; sourceTree = "<group>"; };
 		B927BDE2167A2665007EB59E /* NSURLRequest+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+PCLExtensions.h"; sourceTree = "<group>"; };
 		B927BDE3167A2665007EB59E /* NSURLRequest+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+PCLExtensions.m"; sourceTree = "<group>"; };
 		B936533B1C1A447C00ECC555 /* PublicCodeLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicCodeLibrary.podspec; sourceTree = SOURCE_ROOT; };
@@ -104,12 +88,8 @@
 		B962F41816795D140004221B /* NSArray+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F41916795D140004221B /* NSError+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F41A16795D140004221B /* NSError+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PCLExtensions.m"; sourceTree = "<group>"; };
-		B962F41B16795D140004221B /* NSString+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PCLExtensions.h"; sourceTree = "<group>"; };
-		B962F41C16795D140004221B /* NSString+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F41D16795D140004221B /* NSURL+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F41E16795D140004221B /* NSURL+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+PCLExtensions.m"; sourceTree = "<group>"; };
-		B962F42416795D140004221B /* UIApplication+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PCLExtensions.h"; sourceTree = "<group>"; };
-		B962F42516795D140004221B /* UIApplication+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F42616795D140004221B /* UIColor+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PCLExtensions.h"; sourceTree = "<group>"; };
 		B962F42716795D140004221B /* UIColor+PCLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PCLExtensions.m"; sourceTree = "<group>"; };
 		B962F42816795D140004221B /* UIDevice+PCLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PCLExtensions.h"; sourceTree = "<group>"; };
@@ -275,18 +255,10 @@
 			children = (
 				B962F41716795D140004221B /* NSArray+PCLExtensions.h */,
 				B962F41816795D140004221B /* NSArray+PCLExtensions.m */,
-				B927BDCA167A2665007EB59E /* NSData+PCLExtensions.h */,
-				B927BDCB167A2665007EB59E /* NSData+PCLExtensions.m */,
-				B927BDCC167A2665007EB59E /* NSDate+PCLExtensions.h */,
-				B927BDCD167A2665007EB59E /* NSDate+PCLExtensions.m */,
 				B962F41916795D140004221B /* NSError+PCLExtensions.h */,
 				B962F41A16795D140004221B /* NSError+PCLExtensions.m */,
 				B927BDD2167A2665007EB59E /* NSNotificationCenter+PCLExtensions.h */,
 				B927BDD3167A2665007EB59E /* NSNotificationCenter+PCLExtensions.m */,
-				B927BDD4167A2665007EB59E /* NSObject+PCLExtensions.h */,
-				B927BDD5167A2665007EB59E /* NSObject+PCLExtensions.m */,
-				B962F41B16795D140004221B /* NSString+PCLExtensions.h */,
-				B962F41C16795D140004221B /* NSString+PCLExtensions.m */,
 				B962F41D16795D140004221B /* NSURL+PCLExtensions.h */,
 				B962F41E16795D140004221B /* NSURL+PCLExtensions.m */,
 				B927BDE2167A2665007EB59E /* NSURLRequest+PCLExtensions.h */,
@@ -298,8 +270,6 @@
 		B9C1132616820D0700DCA97A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B962F42416795D140004221B /* UIApplication+PCLExtensions.h */,
-				B962F42516795D140004221B /* UIApplication+PCLExtensions.m */,
 				B962F42616795D140004221B /* UIColor+PCLExtensions.h */,
 				B962F42716795D140004221B /* UIColor+PCLExtensions.m */,
 				B962F42816795D140004221B /* UIDevice+PCLExtensions.h */,
@@ -328,17 +298,12 @@
 				B9B0198E1B6A390D009A58D4 /* PCLTypeDefs.h in Headers */,
 				B9B019901B6A390D009A58D4 /* PCLBackgroundTaskHandler.h in Headers */,
 				B9B019911B6A390D009A58D4 /* NSArray+PCLExtensions.h in Headers */,
-				B9B019921B6A390D009A58D4 /* NSData+PCLExtensions.h in Headers */,
-				B9B019931B6A390D009A58D4 /* NSDate+PCLExtensions.h in Headers */,
 				B95FFC691BBC6F09008B907F /* PCLTransitionAnimatorConstants.h in Headers */,
 				B95FFC631BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.h in Headers */,
 				B9B019941B6A390D009A58D4 /* NSError+PCLExtensions.h in Headers */,
 				B9B019951B6A390D009A58D4 /* NSNotificationCenter+PCLExtensions.h in Headers */,
-				B9B019961B6A390D009A58D4 /* NSObject+PCLExtensions.h in Headers */,
-				B9B019971B6A390D009A58D4 /* NSString+PCLExtensions.h in Headers */,
 				B9B019981B6A390D009A58D4 /* NSURL+PCLExtensions.h in Headers */,
 				B9B019991B6A390D009A58D4 /* NSURLRequest+PCLExtensions.h in Headers */,
-				B9B0199A1B6A390D009A58D4 /* UIApplication+PCLExtensions.h in Headers */,
 				B9B019A21B6A3C56009A58D4 /* PublicCodeLibrary.h in Headers */,
 				B9B0199B1B6A390D009A58D4 /* UIColor+PCLExtensions.h in Headers */,
 				B9B0199C1B6A390D009A58D4 /* UIDevice+PCLExtensions.h in Headers */,
@@ -440,18 +405,13 @@
 				B96E931A174535050046690A /* PCLBackgroundTaskHandler.m in Sources */,
 				B96E9326174535C10046690A /* PCLRestCommand.m in Sources */,
 				B917BDAD174631E1004560BE /* NSArray+PCLExtensions.m in Sources */,
-				B917BDAE174631EE004560BE /* NSData+PCLExtensions.m in Sources */,
-				B917BDAF174631EE004560BE /* NSDate+PCLExtensions.m in Sources */,
 				B917BDB0174631EE004560BE /* NSError+PCLExtensions.m in Sources */,
 				B95FFC6A1BBC6F09008B907F /* PCLTransitionAnimatorConstants.m in Sources */,
 				B917BDB1174631EE004560BE /* NSNotificationCenter+PCLExtensions.m in Sources */,
 				B95FFC661BBC6E64008B907F /* PLCHorizontalSlideTransitionAnimator.m in Sources */,
-				B917BDB2174631EE004560BE /* NSObject+PCLExtensions.m in Sources */,
-				B917BDB3174631EE004560BE /* NSString+PCLExtensions.m in Sources */,
 				B917BDB4174631EE004560BE /* NSURL+PCLExtensions.m in Sources */,
 				B95FFC641BBC6E64008B907F /* PLCCrossFadeTransitionAnimator.m in Sources */,
 				B917BDB5174631EE004560BE /* NSURLRequest+PCLExtensions.m in Sources */,
-				B917BDBB17463213004560BE /* UIApplication+PCLExtensions.m in Sources */,
 				B917BDBC17463213004560BE /* UIColor+PCLExtensions.m in Sources */,
 				B917BDBD17463213004560BE /* UIDevice+PCLExtensions.m in Sources */,
 				B917BDBE17463213004560BE /* UIImage+PCLExtensions.m in Sources */,
